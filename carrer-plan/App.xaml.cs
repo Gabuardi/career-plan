@@ -11,9 +11,7 @@ namespace carrer_plan
             InitializeComponent();
 
             MainPage = new MainPage();
-            /*
-             prueba
-             */ 
+     
         }
 
         protected override void OnStart()
