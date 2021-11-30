@@ -10,7 +10,7 @@ namespace CareerPlan
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NoPlanPage();
         }
 
         protected override void OnStart()
