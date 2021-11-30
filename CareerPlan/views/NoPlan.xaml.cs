@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Xamarin.Forms;
+
+namespace CareerPlan
+{
+    public partial class NoPlanPage : ContentPage
+    {
+        public NoPlanPage()
+        {
+            InitializeComponent();
+        }
+       
+    }
+}

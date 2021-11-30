@@ -9,7 +9,6 @@ namespace CareerPlan
         public App()
         {
             InitializeComponent();
-
             MainPage = new NewPlanPage();
         }
 
