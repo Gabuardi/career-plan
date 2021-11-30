@@ -16,8 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="views\NoPlan.xaml.cs">
-      <DependentUpon>NoPlan.xaml</DependentUpon>
     <Compile Update="Views\NewPlan.xaml.cs">
       <DependentUpon>NewPlan.xaml</DependentUpon>
     </Compile>
