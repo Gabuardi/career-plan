@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CareerPlan.NewPlanPage">
+
+    <StackLayout>
+        <Frame  Padding="24" CornerRadius="0">
+            <Label Text="Crear nuevo plan de estudio" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36" FontAttributes="Bold"/>
+        </Frame>
+        <Entry></Entry>
+
+        <Label Text="Nombre del nuevo plan" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+
+        <Entry ></Entry>
+
+        <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+
+        <Entry ></Entry>
+
+        <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+
+
+
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
+            <Button Text="CANCELAR" />
+            <Button Text="SIGUIENTE" />
+        </StackLayout>
+        
+        <Label FontSize="16" Padding="3,2,30,0">
+        
+
+            
+          
+        </Label>
+        
+        
+    </StackLayout>
+
+</ContentPage>
