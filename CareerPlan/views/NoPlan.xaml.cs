@@ -14,12 +14,6 @@ namespace CareerPlan
         {
             InitializeComponent();
         }
-        private void btnAnadirConID_Clicked(object sender, EventArgs e)
-        {
-
-            DisplayPromptAsync("Ingresa el ID del Plan que desea anadir", "", "OK", "Cancel", "ID", -1, null, "");
-
-
-        }
+       
     }
 }

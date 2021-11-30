@@ -42,35 +42,11 @@
                                     />
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal">
+        
 
 
 
-            <Button x:Name="btnAnadirConID"
-                                    Text="Anadir plan Con ID"
-                FontAttributes="Bold"
-                                    TextColor="Black"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="White"
-                                    WidthRequest="200"
-                                    HorizontalOptions="CenterAndExpand"
-             
-                                    CornerRadius="10"
-                Padding="20"
-                Clicked="btnAnadirConID_Clicked"
-                
-                
-                                    
-                                    
-                                    
-                                    
-                                    />
-
-
-
-        </StackLayout>
-
+     
 
 
 
