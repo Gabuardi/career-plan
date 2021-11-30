@@ -8,9 +8,9 @@ using Xamarin.Forms;
 
 namespace CareerPlan
 {
-    public partial class MainPage : ContentPage
+    public partial class NewPlanPage : ContentPage
     {
-        public MainPage()
+        public NewPlanPage()
         {
             InitializeComponent();
         }
