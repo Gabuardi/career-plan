@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using CareerPlan.Views;
 
 namespace CareerPlan
 {
@@ -9,7 +10,7 @@ namespace CareerPlan
         public App()
         {
             InitializeComponent();
-            MainPage = new NavigationPage(new NoPlanPage());
+            MainPage = new NavigationPage(new ApplicationNexo());
         }
 
         protected override void OnStart()
