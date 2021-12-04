@@ -2,9 +2,9 @@
 
 namespace CareerPlan.Views
 {
-    public partial class NewPlanPage : ContentPage
+    public partial class ManagePeriodList : ContentPage
     {
-        public NewPlanPage()
+        public ManagePeriodList()
         {
             InitializeComponent();
         }
