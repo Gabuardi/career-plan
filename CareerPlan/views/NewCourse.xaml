@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CareerPlan.views.NewCourse">
+    <?xml version="1.0" encoding="utf-8" ?>
+    
+        <StackLayout Padding="20">
+            <StackLayout Orientation="Vertical"
+                     Spacing="100"
+                     Padding="30">
+                <Label Text="Nuevo Curso"
+                                  
+                                  FontSize="25"
+                   FontAttributes="Bold"
+                                  TextColor="Black"
+                                   Padding="1"
+                                   WidthRequest="150"
+                                   HorizontalOptions="StartAndExpand"
+               />
+            </StackLayout>
+
+
+            <Entry ></Entry>
+
+            <Label Text="Nombre del Curso" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+            <Entry ></Entry>
+
+            <Label Text="Profesor" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="150" />
+
+                </Grid.ColumnDefinitions>
+
+                <Entry
+                Grid.Row="0"
+                 Grid.Column="0"/>
+
+                <Entry
+                Grid.Row="0"
+                 Grid.Column="1"/>
+
+                <Label Text="Creditos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
+                   Grid.Row="1"
+                 Grid.Column="0"
+                   />
+                <Label Text="Precio" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
+                   Grid.Row="1"
+                 Grid.Column="1"/>
+
+                <Label Text="Cursos Requisitos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
+                   Grid.Row="2"
+                 Grid.Column="0"/>
+                <Button  Text="Anadir"
+                      Grid.Row="2"
+                 Grid.Column="1"
+                     
+                                    TextColor="White"
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Gray"
+                      CornerRadius="10"
+                     FontSize="16"
+
+                     />
+
+
+            </Grid>
+
+
+
+
+
+
+
+
+
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  VerticalOptions="EndAndExpand">
+                <Button  Text="Cancelar"
+                                    TextColor="White"
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Gray"
+                     
+                                    WidthRequest="170"
+                    Padding="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                   CornerRadius="10"
+                    FontAttributes="Bold"
+                     HeightRequest="5"
+                     FontSize="18"
+                                    />
+
+                <Button Text="Aceptar"
+                    TextColor="White"
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Gray"
+                     
+                                    WidthRequest="170"
+                    Padding="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                   CornerRadius="10"
+                    FontAttributes="Bold"
+                     FontSize="18"/>
+            </StackLayout>
+
+            <Label FontSize="16" Padding="3,2,30,0">
+
+
+
+
+            </Label>
+
+
+        </StackLayout>
+
+    </ContentPage>
+</ContentPage>
