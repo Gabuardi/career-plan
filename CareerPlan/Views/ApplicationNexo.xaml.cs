@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CareerPlan.views;
+using System;
 using Xamarin.Forms;
 
 namespace CareerPlan.Views
@@ -24,5 +25,11 @@ namespace CareerPlan.Views
         {
             Navigation.PushAsync(new ManagePeriodList());
         }
+        
+        void GoToNewCoursePage(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new NewCoursePage());
+        }
+        
     }
 }
