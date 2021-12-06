@@ -2,9 +2,39 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="CareerPlan.Views.ManagePeriodList">
+    x:Class="CareerPlan.Views.ManagePeriodList"
+    Title="Periodos del Plan de Estudio">
     <ContentPage.Content>
         <StackLayout>
+
+            <ListView>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                      <ViewCell>
+                         <ViewCell.ContextActions>
+                            <MenuItem
+                                      
+                                      Text="Editar" />
+                            <MenuItem 
+                                      
+                                      Text="Eliminar" IsDestructive="True" />
+                         </ViewCell.ContextActions>
+                         <StackLayout Padding="15,0">
+                              <Label Text="{Binding title}" VerticalTextAlignment="Center" />
+                         </StackLayout>
+                      </ViewCell>
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+
+                <ListView.ItemsSource>
+                  <x:Array Type="{x:Type x:String}">
+                    <x:String>I Cuatrimestre</x:String>
+                    <x:String>II Cuatrimestre</x:String>
+                  </x:Array>
+                </ListView.ItemsSource>
+            </ListView>
+
+
             <Button Text="I Cuatrimestre" />
             <Button Text="Añadir Periodo" />
         </StackLayout>
