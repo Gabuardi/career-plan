@@ -3,40 +3,34 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CareerPlan.Views.ManagePeriodList"
-    Title="Periodos del Plan de Estudio">
-    <ContentPage.Content>
-        <StackLayout>
+    Title="Periodos del Plan de Estudio"
+    BackgroundColor="#F7F7F7">
 
-            <ListView>
+
+        <StackLayout Spacing="0">
+            <Button Text="AÑADIR PERIODO" Margin="15,15,15,0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"></Button>
+            <ListView x:Name="PeriodsList" ItemsSource="{Binding Periods}" BackgroundColor="Transparent">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                       <ViewCell>
                          <ViewCell.ContextActions>
-                            <MenuItem
-                                      
-                                      Text="Editar" />
-                            <MenuItem 
-                                      
-                                      Text="Eliminar" IsDestructive="True" />
+                            <MenuItem Text="Editar" />
+                            <MenuItem Text="Eliminar" IsDestructive="True" />
                          </ViewCell.ContextActions>
-                         <StackLayout Padding="15,0">
-                              <Label Text="{Binding title}" VerticalTextAlignment="Center" />
+                         <StackLayout Padding="15,0" VerticalOptions="Center">
+                              <Label Text="{Binding Title}" />
                          </StackLayout>
                       </ViewCell>
                     </DataTemplate>
                   </ListView.ItemTemplate>
-
-                <ListView.ItemsSource>
-                  <x:Array Type="{x:Type x:String}">
-                    <x:String>I Cuatrimestre</x:String>
-                    <x:String>II Cuatrimestre</x:String>
-                  </x:Array>
-                </ListView.ItemsSource>
             </ListView>
 
+            <!--<< Wizard Buttons >>-->
+            <StackLayout Margin="0, 20" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+                <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            </StackLayout>
+          
 
-            <Button Text="I Cuatrimestre" />
-            <Button Text="Añadir Periodo" />
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
