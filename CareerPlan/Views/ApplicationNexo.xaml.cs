@@ -21,9 +21,9 @@ namespace CareerPlan.Views
             Navigation.PushAsync(new NewPlanPage());
         }
 
-        void GoToManagePeriodListPage(object sender, EventArgs e)
+        async void GoToManagePeriodListPage(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new ManagePeriodList());
+            await Navigation.PushAsync(new ManagePeriodList());
         }
 
         void GoToStudentPeriod(object sender, EventArgs e)

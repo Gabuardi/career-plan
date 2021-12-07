@@ -2,11 +2,35 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    x:Class="CareerPlan.Views.ManagePeriodList">
-    <ContentPage.Content>
-        <StackLayout>
-            <Button Text="I Cuatrimestre" />
-            <Button Text="Añadir Periodo" />
+    x:Class="CareerPlan.Views.ManagePeriodList"
+    Title="Periodos del Plan de Estudio"
+    BackgroundColor="#F7F7F7">
+
+
+        <StackLayout Spacing="0">
+            <Button Text="AÑADIR PERIODO" Margin="15,15,15,0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"></Button>
+            <ListView x:Name="PeriodsList" ItemsSource="{Binding Periods}" BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                      <ViewCell>
+                         <ViewCell.ContextActions>
+                            <MenuItem Text="Editar" />
+                            <MenuItem Text="Eliminar" IsDestructive="True" />
+                         </ViewCell.ContextActions>
+                         <StackLayout Padding="15,0" VerticalOptions="Center">
+                              <Label Text="{Binding Title}" />
+                         </StackLayout>
+                      </ViewCell>
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+            </ListView>
+
+            <!--<< Wizard Buttons >>-->
+            <StackLayout Margin="0, 20" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+                <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            </StackLayout>
+          
+
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>
