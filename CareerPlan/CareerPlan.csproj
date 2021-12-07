@@ -23,4 +23,9 @@
     <Folder Include="Models\" />
     <Folder Include="View Models\" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="views\MyCourses.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

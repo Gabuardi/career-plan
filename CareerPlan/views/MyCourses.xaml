@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CareerPlan.views.MyCourses"
+             Title="MyCourses">
+
+    <ScrollView x:Name="SV" Orientation="Horizontal" HorizontalScrollBarVisibility="Always" HorizontalOptions="FillAndExpand" VerticalScrollBarVisibility="Always">
+
+
+
+        <StackLayout Orientation="Vertical"
+         Padding="20">
+            <StackLayout Orientation="Vertical"
+                     Spacing="100"
+                     Padding="30">
+                <Label Text="Ingenieria Informatica"
+                                  
+                                  FontSize="25"
+                   FontAttributes="Bold"
+                                  TextColor="Black"
+                                   Padding="1"
+                                   WidthRequest="150"
+                                   HorizontalOptions="StartAndExpand"
+               />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal">
+                <Grid HorizontalOptions="FillAndExpand"
+           >
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="100"  />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100" />
+                        <RowDefinition Height="100"  />
+
+
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+
+                    <Button Text="Matematicas Discretas" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="LightGray"
+                      CornerRadius="10"
+                Grid.Row="0"
+                 Grid.Column="0" />
+
+                    <Button Text="Introduccion a la Electronica" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="LightGray"
+                      CornerRadius="10"
+                Grid.Row="0"
+                 Grid.Column="1"/>
+                    <Button Text="Redes" FontAttributes="Bold" TextColor="White"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Purple"
+                      CornerRadius="10"
+                Grid.Row="0"
+                 Grid.Column="2"/>
+
+
+
+
+                    <Button Text="Fundamentos de     TI" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="LightGray"
+                      CornerRadius="10"
+                   Grid.Row="1"
+                 Grid.Column="0"
+                   />
+                    <Button Text="Multimedia e Internet" FontAttributes="Bold" TextColor="White"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Purple"
+                      CornerRadius="10"
+                   Grid.Row="1"
+                 Grid.Column="1"/>
+                    <Button Text="Bases de Datos" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="White"
+                      CornerRadius="10"
+                   Grid.Row="1"
+                 Grid.Column="2"/>
+
+
+
+
+
+                    <Button Text="Ingles 1" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="LightGray"
+                      CornerRadius="10"
+                   Grid.Row="2"
+                 Grid.Column="0"/>
+                    <Button Text="Ingles 2" FontAttributes="Bold" TextColor="White"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Purple"
+                      CornerRadius="10"
+                   Grid.Row="2"
+                 Grid.Column="1"/>
+                    <Button Text="Ingles 3" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="White"
+                      CornerRadius="10"
+                   Grid.Row="2"
+                 Grid.Column="2"/>
+
+
+
+                    <Button Text="Progra 1" FontAttributes="Bold" TextColor="Black"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="LightGray"
+                      CornerRadius="10"
+                   Grid.Row="3"
+                 Grid.Column="1"/>
+                    <Button Text="  Programacion Concurrente"  FontAttributes="Bold" TextColor="White"
+                   
+                   FontSize="12" 
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Purple"
+                      CornerRadius="10"
+                   Grid.Row="3"
+                 Grid.Column="2" />
+
+
+
+
+
+
+
+
+
+                </Grid>
+            </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>

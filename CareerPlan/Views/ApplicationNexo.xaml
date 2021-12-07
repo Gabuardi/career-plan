@@ -13,6 +13,7 @@
                 <RowDefinition Height="60"></RowDefinition>
                 <RowDefinition Height="60"></RowDefinition>
                 <RowDefinition Height="60"></RowDefinition>
+                <RowDefinition Height="60"></RowDefinition>
             </Grid.RowDefinitions>
 
             <Button Grid.Row="0" Clicked="GoToNoPlanPage"
@@ -23,8 +24,11 @@
                     Text="Manage Period List Page" BorderWidth="2" BorderColor="#000"/>
             <Button Grid.Row="3" Clicked="GoToStudentPeriod"
                     Text="Student Period Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Grid.Row="3" Clicked="GoToNewCoursePage"
+            <Button Grid.Row="4" Clicked="GoToNewCoursePage"
                     Text="New Course Page" BorderWidth="2" BorderColor="#000"/>
+            <Button Grid.Row="5" Clicked="GoToMyCoursesPage"
+                    Text="My Courses Page" BorderWidth="2" BorderColor="#000"/>
+            
         </Grid>
     </StackLayout>
 </ContentPage>
