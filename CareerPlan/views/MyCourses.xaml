@@ -46,7 +46,7 @@
                     <Button Text="Matematicas Discretas" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
@@ -56,7 +56,7 @@
                     <Button Text="Introduccion a la Electronica" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
@@ -65,7 +65,7 @@
                     <Button Text="Redes" FontAttributes="Bold" TextColor="White"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="Purple"
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
@@ -78,7 +78,7 @@
                     <Button Text="Fundamentos de     TI" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
@@ -88,7 +88,7 @@
                     <Button Text="Multimedia e Internet" FontAttributes="Bold" TextColor="White"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="Purple"
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
@@ -97,7 +97,7 @@
                     <Button Text="Bases de Datos" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="White"
                       CornerRadius="10"
@@ -111,7 +111,7 @@
                     <Button Text="Ingles 1" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
@@ -120,7 +120,7 @@
                     <Button Text="Ingles 2" FontAttributes="Bold" TextColor="White"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="Purple"
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
@@ -129,7 +129,7 @@
                     <Button Text="Ingles 3" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="White"
                       CornerRadius="10"
@@ -141,7 +141,7 @@
                     <Button Text="Progra 1" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="LightGray"
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
@@ -150,7 +150,7 @@
                     <Button Text="  Programacion Concurrente"  FontAttributes="Bold" TextColor="White"
                    
                    FontSize="12" 
-                                    BorderColor="Black"
+                                    BorderColor="Purple"
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
