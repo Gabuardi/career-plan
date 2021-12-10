@@ -3,7 +3,43 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CareerPlan.Views.CareerPlanSummaryPage">
-    <StackLayout>
-        <Label>Bachillerato Ingeniería en Informática</Label>
+
+  
+    <StackLayout Padding="15">
+          <Grid>
+        <Label Grid.Row="0" Grid.ColumnSpan="2" FontSize="15" TextColor="#42204f">300-033</Label>
+        <Label Grid.Row="1" Grid.ColumnSpan="2" FontSize="22" FontAttributes="Bold" TextColor="#643078">Bachillerato Ingeniería en Informática</Label>
+        <Label Grid.Row="2" Grid.ColumnSpan="2">
+            La carrera de Ingeniería Informática de ULACIT es ideal para
+personas que gustan de resolver problemas innovadores
+relacionados con tecnología; personas altamente motivadas a
+descubrir e implementar soluciones tecnológicas para desafíos
+difíciles.
+        </Label>
+          <StackLayout Grid.Row="3" Grid.Column="0">
+                <Label FontAttributes="Bold">Cursos:</Label>
+                <Label>123</Label>
+            </StackLayout>
+            <StackLayout Grid.Row="3" Grid.Column="1">
+                <Label FontAttributes="Bold">Creditos:</Label>
+                <Label>150</Label>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Grid.Column="0">
+                <Label FontAttributes="Bold">Tiempo Estimado:</Label>
+                <Label>3 años</Label>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Grid.Column="1">
+                <Label FontAttributes="Bold">Precio Total:</Label>
+                <Label>$15,000</Label>
+            </StackLayout>
+      
+    </Grid>
+
+           <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Text="EDITAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+                <Button Text="SELECCIONAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
+                <Button Text="VER" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            </StackLayout>
     </StackLayout>
+
 </ContentPage>
