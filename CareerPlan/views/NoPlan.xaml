@@ -1,10 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NoPlanPage"
-             BackgroundColor="#4F255F">
+             x:Class="CareerPlan.Views.NoPlanPage">
 
-    <StackLayout VerticalOptions="CenterAndExpand" Padding="15" Spacing="50">
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#8100b3" Offset="0.0" />
+            <GradientStop Color="#5e0082" Offset="0.6"/>
+            <GradientStop Color="#43005d" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="50">
         <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="White">
                 NO HAY PLANES DE ESTUDIO AGREGADOS EN ESTE DISPOSITIVO
         </Label>
