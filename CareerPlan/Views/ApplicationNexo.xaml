@@ -25,6 +25,8 @@
                     Text="Student Period Page" BorderWidth="2" BorderColor="#000"/>
             <Button Grid.Row="3" Clicked="GoToNewCoursePage"
                     Text="New Course Page" BorderWidth="2" BorderColor="#000"/>
+              <Button Grid.Row="4" Clicked="GoToHomepage"
+                    Text="Homepage" BorderWidth="2" BorderColor="#000"/>
         </Grid>
     </StackLayout>
 </ContentPage>
