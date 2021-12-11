@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NoPlanPage">
-
+             x:Class="CareerPlan.Views.NoPlanPage"
+             NavigationPage.HasNavigationBar="False">
     <ContentPage.Background>
         <LinearGradientBrush EndPoint="0,1">
             <GradientStop Color="#8100b3" Offset="0.0" />
@@ -13,7 +13,7 @@
 
     <StackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="50">
         <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="White">
-                NO HAY PLANES DE ESTUDIO AGREGADOS EN ESTE DISPOSITIVO
+                Parece que no tienes ningún plan de carrera en este dispositivo
         </Label>
 
         <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
