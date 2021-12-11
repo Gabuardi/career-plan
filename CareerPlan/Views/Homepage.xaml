@@ -6,12 +6,13 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
     ios:Page.UseSafeArea="true"
-    NavigationPage.HasNavigationBar="False">
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="#F7F7F7">
 
     <StackLayout HorizontalOptions="Fill" Padding="15">
         <Label>Ingeniería en Informática</Label>
         <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="200" TrackInnerRadius="0.85" TrackOuterRadius="1"
-                                       IndicatorInnerRadius="0.85" IndicatorOuterRadius="1"/>
+                                       IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3"/>
 
 
         <Grid>
@@ -28,7 +29,7 @@
     <!--<< Wizard Buttons >>-->
     <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
         <Button Text="CREAR NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
-        <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+        <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
     </StackLayout>
 
 
