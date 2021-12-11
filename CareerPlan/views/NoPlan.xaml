@@ -5,9 +5,9 @@
              NavigationPage.HasNavigationBar="False">
     <ContentPage.Background>
         <LinearGradientBrush EndPoint="0,1">
-            <GradientStop Color="#8100b3" Offset="0.0" />
-            <GradientStop Color="#5e0082" Offset="0.6"/>
-            <GradientStop Color="#43005d" Offset="1.0" />
+            <GradientStop Color="#8100B3" Offset="0.0" />
+            <GradientStop Color="#5E0082" Offset="0.6"/>
+            <GradientStop Color="#43005D" Offset="1.0" />
         </LinearGradientBrush>
     </ContentPage.Background>
 
@@ -16,7 +16,7 @@
                 Parece que no tienes ningún plan de carrera en este dispositivo
         </Label>
 
-        <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+        <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
             <Button.Text>
                 CREAR NUEVO PLAN DE CARRERA
             </Button.Text>
