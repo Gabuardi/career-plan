@@ -15,8 +15,14 @@
         <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold">Bachillerato en Ingeniería en Informática</Label>
 
         <!--<< CIRCLE PROGRESS BAR >>-->
-        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="225" TrackInnerRadius="0.85"
-                                           TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3"/>
+        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="200" TrackInnerRadius="0.85"
+                                           TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3">
+            <progressBar:SfCircularProgressBar.Content>
+                 <StackLayout>
+                    <Label Text="75%" FontSize="30" TextColor="#8100B3"></Label>
+                 </StackLayout>
+            </progressBar:SfCircularProgressBar.Content>
+        </progressBar:SfCircularProgressBar>
 
         <!--<< FEATURE POINTS >>-->
         <Grid>
