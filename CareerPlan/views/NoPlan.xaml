@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NoPlanPage">
+             x:Class="CareerPlan.Views.NoPlanPage"
+             BackgroundColor="#4F255F">
 
-    <StackLayout>
-        <StackLayout Orientation="Vertical">
-            <Label FontSize="17" FontAttributes="Bold" TextColor="Black">
-                No Hay Planes de &#10;Estudio Agregados
-            </Label>
-        </StackLayout>
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="15" Spacing="50">
+        <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="White">
+                NO HAY PLANES DE ESTUDIO AGREGADOS EN ESTE DISPOSITIVO
+        </Label>
 
-        <Button Text="Crear un Nuevo Plan" Padding="20" TextColor="Black" BackgroundColor="White" HorizontalOptions="CenterAndExpand"
-                FontAttributes="Bold"/>
+        <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+            <Button.Text>
+                CREAR NUEVO PLAN DE CARRERA
+            </Button.Text>
+        </Button>
                                     
     </StackLayout>
 </ContentPage>
