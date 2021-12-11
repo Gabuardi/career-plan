@@ -9,12 +9,16 @@
     NavigationPage.HasNavigationBar="False"
     BackgroundColor="#F7F7F7">
 
-    <StackLayout HorizontalOptions="Fill" Padding="15">
-        <Label>Ingeniería en Informática</Label>
-        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="200" TrackInnerRadius="0.85" TrackOuterRadius="1"
-                                       IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3"/>
+    <StackLayout HorizontalOptions="Fill" Padding="15, 25, 15, 15" Spacing="40">
 
+        <!--<< TITLE >>-->
+        <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold">Bachillerato en Ingeniería en Informática</Label>
 
+        <!--<< CIRCLE PROGRESS BAR >>-->
+        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="225" TrackInnerRadius="0.85"
+                                           TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3"/>
+
+        <!--<< FEATURE POINTS >>-->
         <Grid>
             <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
                 <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Cursos Restantes</Label>
@@ -26,14 +30,11 @@
             </StackLayout>
         </Grid>
 
-    <!--<< Wizard Buttons >>-->
-    <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-        <Button Text="CREAR NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
-        <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Button Text="CREAR NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
+        </StackLayout>
+
     </StackLayout>
-
-
-    </StackLayout>
-
-
 </ContentPage>
