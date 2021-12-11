@@ -6,6 +6,31 @@
     NavigationPage.HasNavigationBar="False"
     xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms">
 
-    <progressBar:SfCircularProgressBar IsIndeterminate="True" SegmentCount="5"/>
+    <StackLayout HorizontalOptions="Fill" Padding="15">
+        <Label>Ingeniería en Informática</Label>
+        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="200" TrackInnerRadius="0.85" TrackOuterRadius="1"
+                                       IndicatorInnerRadius="0.85" IndicatorOuterRadius="1"/>
+
+
+        <Grid>
+            <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Cursos Restantes</Label>
+                <Label HorizontalTextAlignment="Center">2 Cursos</Label>
+            </StackLayout>
+            <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand">
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Tiempo Estimado</Label>
+                <Label HorizontalTextAlignment="Center">5 años 5 meses</Label>
+            </StackLayout>
+        </Grid>
+
+    <!--<< Wizard Buttons >>-->
+    <StackLayout Margin="0, 20" Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+        <Button Text="CREAR NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+        <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+    </StackLayout>
+
+
+    </StackLayout>
+
 
 </ContentPage>
