@@ -4,53 +4,14 @@
              x:Class="CareerPlan.Views.NoPlanPage">
 
     <StackLayout>
-
-
-
-
-        <StackLayout Orientation="Vertical"
-                     Spacing="10000"
-                     Padding="130">
-            <Label Text="No Hay Planes de &#10;Estudio Agregados"
-                                  
-                                  FontSize="17"
-                   FontAttributes="Bold"
-                                  TextColor="Black"
-                                   Padding="1"
-                                   WidthRequest="150"
-                                   HorizontalOptions="Center"
-               />
+        <StackLayout Orientation="Vertical">
+            <Label FontSize="17" FontAttributes="Bold" TextColor="Black">
+                No Hay Planes de &#10;Estudio Agregados
+            </Label>
         </StackLayout>
 
-
-        <StackLayout Orientation="Horizontal">
-
-            <Button x:Name="btnCrearNuevoPlan"
-                                    Text="Crear un Nuevo Plan"
-                                    TextColor="Black"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="White"
-                                    WidthRequest="200"
-                    Padding="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                   CornerRadius="10"
-                    FontAttributes="Bold"
+        <Button Text="Crear un Nuevo Plan" Padding="20" TextColor="Black" BackgroundColor="White" HorizontalOptions="CenterAndExpand"
+                FontAttributes="Bold"/>
                                     
-                                    
-                                    
-                                    />
-        </StackLayout>
-
-        
-
-
-
-     
-
-
-
-
     </StackLayout>
-
 </ContentPage>
