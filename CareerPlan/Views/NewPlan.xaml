@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:custom="clr-namespace:CareerPlan.Custom"
              x:Class="CareerPlan.Views.NewPlanPage"
              Title="Nuevo Plan de Carrera"
              BackgroundColor="#F7F7F7">
@@ -15,10 +16,12 @@
 
 
         <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-        <Editor></Editor>
+        <Grid>
+            <custom:OutlineEditor AutoSize="TextChanges"/>
+        </Grid>
 
         <!--<< ACTION BUTTONS >>-->
-        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+        <StackLayout Orientation="Horizontal" Margin="0, 15, 0, 0" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
             <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
             <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
         </StackLayout>

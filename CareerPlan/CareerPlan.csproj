@@ -18,9 +18,11 @@
   <ItemGroup>
     <None Remove="Models\" />
     <None Remove="View Models\" />
+    <None Remove="Custom\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="View Models\" />
+    <Folder Include="Custom\" />
   </ItemGroup>
 </Project>
