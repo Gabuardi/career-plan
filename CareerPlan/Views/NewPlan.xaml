@@ -1,40 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NewPlanPage">
+             x:Class="CareerPlan.Views.NewPlanPage"
+             Title="Nuevo Plan de Carrera">
+    <StackLayout Padding="15">
 
-    <StackLayout>
-        <Frame  Padding="24" CornerRadius="0">
-            <Label Text="Crear nuevo plan de estudio" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36" FontAttributes="Bold"/>
-        </Frame>
+        <Label Text="Nombre" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
         <Entry></Entry>
 
-        <Label Text="Nombre del nuevo plan" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-
-        <Entry ></Entry>
 
         <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-
         <Entry ></Entry>
 
+
         <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+        <Editor></Editor>
 
-
-
-
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-            <Button Text="CANCELAR" />
-            <Button Text="SIGUIENTE" />
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
         </StackLayout>
-        
-        <Label FontSize="16" Padding="3,2,30,0">
-        
 
-            
-          
-        </Label>
-        
-        
     </StackLayout>
-
 </ContentPage>
