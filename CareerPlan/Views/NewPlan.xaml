@@ -1,40 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NewPlanPage">
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:custom="clr-namespace:CareerPlan.Custom"
+             x:Class="CareerPlan.Views.NewPlanPage"
+             ios:Page.UseSafeArea="true"
+             Title="Nuevo Plan de Carrera"
+             BackgroundColor="#F7F7F7">
+    <StackLayout Padding="15" Spacing="20">
 
-    <StackLayout>
-        <Frame  Padding="24" CornerRadius="0">
-            <Label Text="Crear nuevo plan de estudio" HorizontalTextAlignment="Center" TextColor="Black" FontSize="36" FontAttributes="Bold"/>
-        </Frame>
-        <Entry></Entry>
-
-        <Label Text="Nombre del nuevo plan" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-
-        <Entry ></Entry>
-
-        <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-
-        <Entry ></Entry>
-
-        <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-
-
-
-
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-            <Button Text="CANCELAR" />
-            <Button Text="SIGUIENTE" />
+        <!--<< ENTRIES >>-->
+        <StackLayout>
+            <Label Text="Nombre" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Entry/>
         </StackLayout>
-        
-        <Label FontSize="16" Padding="3,2,30,0">
-        
+        <StackLayout>
+            <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Entry/>
+        </StackLayout>
 
-            
-          
-        </Label>
-        
-        
+        <!--<< TEXT AREA >>-->
+        <StackLayout>
+            <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Grid>
+                <custom:OutlineEditor AutoSize="TextChanges"/>
+            </Grid>
+        </StackLayout>
+
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+        </StackLayout>
+
     </StackLayout>
-
 </ContentPage>
