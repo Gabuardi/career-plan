@@ -8,13 +8,6 @@
         <Label Text="CREATE NEW CAREER PLAN FLOW" Margin="0, 15" FontAttributes="Bold"/>
 
         <Grid Padding="15, 0">
-            <Grid.RowDefinitions>
-                <RowDefinition Height="60"></RowDefinition>
-                <RowDefinition Height="60"></RowDefinition>
-                <RowDefinition Height="60"></RowDefinition>
-                <RowDefinition Height="60"></RowDefinition>
-            </Grid.RowDefinitions>
-
             <Button Grid.Row="0" Clicked="GoToNoPlanPage"
                     Text="No Plan Page" BorderWidth="2" BorderColor="#000"/>
             <Button Grid.Row="1" Clicked="GoToNewPlanPage"
@@ -25,7 +18,9 @@
                     Text="Student Period Page" BorderWidth="2" BorderColor="#000"/>
             <Button Grid.Row="4" Clicked="GoToNewCoursePage"
                     Text="New Course Page" BorderWidth="2" BorderColor="#000"/>
-              <Button Grid.Row="4" Clicked="GoToHomepage"
+            <Button Grid.Row="5" Clicked="GoToCareerPlanSummary"
+                    Text="Career Plan Summary" BorderWidth="2" BorderColor="#000"/>
+            <Button Grid.Row="6" Clicked="GoToHomepage"
                     Text="Homepage" BorderWidth="2" BorderColor="#000"/>
         </Grid>
     </StackLayout>

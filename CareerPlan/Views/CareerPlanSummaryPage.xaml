@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CareerPlan.Views.CareerPlanSummaryPage"
+    BackgroundColor="#F7F7F7">
+
+    <StackLayout Padding="15" Spacing="20" VerticalOptions="Fill">
+
+        <!--<< HEADER >>-->
+        <Label Padding="5" FontSize="15" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#643078" HorizontalTextAlignment="Center">300-033</Label>
+        <Label FontSize="25" FontAttributes="Bold" TextColor="#643078">Bachillerato Ingeniería en Informática</Label>
+        <ScrollView VerticalOptions="Fill">
+            <Label >
+                            La carrera de Ingeniería Informática de ULACIT es ideal para
+                personas que gustan de resolver problemas innovadores
+                relacionados con tecnología; personas altamente motivadas a
+                descubrir e implementar soluciones tecnológicas para desafíos
+                difíciles.
+            </Label>
+        </ScrollView>
+
+        <!--<< FEATURE POINTS >>-->
+        <Grid RowSpacing="15">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                <Label FontAttributes="Bold">Cursos:</Label>
+                <Label>123</Label>
+            </StackLayout>
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                <Label FontAttributes="Bold">Creditos:</Label>
+                <Label>150</Label>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="0">
+                <Label FontAttributes="Bold">Tiempo Duración:</Label>
+                <Label>3 años</Label>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="1">
+                <Label FontAttributes="Bold">Precio Total:</Label>
+                <Label>$15,000</Label>
+            </StackLayout>
+        </Grid>
+
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Margin="0, 15, 0, 0" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Orientation="Horizontal">
+            <Button Text="EDITAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            <Button Text="SELECCIONAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
+            <Button Text="VER" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
