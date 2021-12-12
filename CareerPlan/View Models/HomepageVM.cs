@@ -2,24 +2,25 @@
 {
     public class HomepageVM
     {
+
         public string CareerPlanName
         {
-            get { return "Bachillerato en Biotecnología Empresarial Acuatica"; }
+            get { return App.CurrentCareerPlan.Name; }
         }
 
         public int CareerPlanProgress
         {
-            get { return 50; }
+            get { return App.CurrentCareerPlan.Progress; }
         }
 
         public int RemainingCourses
         {
-            get { return 32;  }
+            get { return App.CurrentCareerPlan.RemainingCourses; }
         }
 
         public int RemainingMonths
         {
-            get { return 5; }
+            get { return App.CurrentCareerPlan.RemainingMonths; }
         }
 
     }

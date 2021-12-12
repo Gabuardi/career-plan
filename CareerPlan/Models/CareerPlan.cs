@@ -10,7 +10,7 @@ namespace CareerPlan.Models
         public int TotalCredits { get; set; }
         public int TotalCourses { get; set; }
         public double TotalPrice { get; set; }
-        public int Progresss { get; set; }
+        public int Progress { get; set; }
         public int RemainingMonths { get; set; }
         public int RemainingCourses { get; set; }
         public List<Period> PeriodsList { get; set; }
