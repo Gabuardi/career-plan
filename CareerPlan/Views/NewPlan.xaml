@@ -5,23 +5,28 @@
              x:Class="CareerPlan.Views.NewPlanPage"
              Title="Nuevo Plan de Carrera"
              BackgroundColor="#F7F7F7">
-    <StackLayout Padding="15">
+    <StackLayout Padding="15" Spacing="20">
 
-        <Label Text="Nombre" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-        <Entry></Entry>
+        <!--<< ENTRIES >>-->
+        <StackLayout>
+            <Label Text="Nombre" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Entry/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Entry/>
+        </StackLayout>
 
-
-        <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-        <Entry ></Entry>
-
-
-        <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-        <Grid>
-            <custom:OutlineEditor AutoSize="TextChanges"/>
-        </Grid>
+        <!--<< TEXT AREA >>-->
+        <StackLayout>
+            <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Grid>
+                <custom:OutlineEditor AutoSize="TextChanges"/>
+            </Grid>
+        </StackLayout>
 
         <!--<< ACTION BUTTONS >>-->
-        <StackLayout Orientation="Horizontal" Margin="0, 15, 0, 0" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
             <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
             <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
         </StackLayout>
