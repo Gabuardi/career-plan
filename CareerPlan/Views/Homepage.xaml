@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CareerPlan.Views.Homepage"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="#F7F7F7">
+
+    <StackLayout HorizontalOptions="Fill" Padding="15, 25, 15, 15" Spacing="40">
+
+        <!--<< TITLE >>-->
+        <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold">Bachillerato en Ingeniería en Informática</Label>
+
+        <!--<< CIRCLE PROGRESS BAR >>-->
+        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="200" TrackInnerRadius="0.85"
+                                           TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3">
+            <progressBar:SfCircularProgressBar.Content>
+                 <StackLayout>
+                    <Label Text="75%" FontSize="30" TextColor="#8100B3"></Label>
+                 </StackLayout>
+            </progressBar:SfCircularProgressBar.Content>
+        </progressBar:SfCircularProgressBar>
+
+        <!--<< FEATURE POINTS >>-->
+        <Grid>
+            <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Cursos Restantes</Label>
+                <Label HorizontalTextAlignment="Center">2 Cursos</Label>
+            </StackLayout>
+            <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand">
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Tiempo Estimado</Label>
+                <Label HorizontalTextAlignment="Center">5 años 5 meses</Label>
+            </StackLayout>
+        </Grid>
+
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Button Text="CREAR NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

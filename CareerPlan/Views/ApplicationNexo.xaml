@@ -20,6 +20,8 @@
                     Text="New Course Page" BorderWidth="2" BorderColor="#000"/>
             <Button Grid.Row="5" Clicked="GoToCareerPlanSummary"
                     Text="Career Plan Summary" BorderWidth="2" BorderColor="#000"/>
+            <Button Grid.Row="6" Clicked="GoToHomepage"
+                    Text="Homepage" BorderWidth="2" BorderColor="#000"/>
         </Grid>
     </StackLayout>
 </ContentPage>

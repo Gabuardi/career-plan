@@ -9,6 +9,9 @@ namespace CareerPlan
     {
         public App()
         {
+            string licenseKey = "NTQ2Njc4QDMxMzkyZTMzMmUzMEtIQ0FoSE1aSGhqWW8wV2RpdWJFRU5yaXdRZDk2YXhiMFpWUDBwZHlhZkE9";
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense(licenseKey);
+
             InitializeComponent();
             MainPage = new NavigationPage(new ApplicationNexo());
         }

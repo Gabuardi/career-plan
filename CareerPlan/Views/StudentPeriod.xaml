@@ -2,7 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CareerPlan.Views.StudentPeriodPage"
-             Title="Añadir Periodo Estudiantil">
+             Title="Añadir Periodo Estudiantil"
+                BackgroundColor="#F7F7F7">
+  
     <ContentPage.Content>
         <StackLayout>
 
@@ -18,16 +20,32 @@
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" >
                 <Label Text="Cursos" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
-                <Button Text="Anadir curso" />
+                <Button Text="AÑADIR CURSO" Margin="15,15,15,0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"></Button>
+                
             </StackLayout>
+            <ListView x:Name="StudentPeriodList" ItemsSource="{Binding StudentPeriods}" BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Editar" />
+                                <MenuItem Text="Eliminar" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="15,0" VerticalOptions="Center">
+                                <Label Text="{Binding Title}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
 
 
 
 
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" >
-                <Button Text="CANCELAR" />
-                <Button Text="ACEPTAR" />
+            <StackLayout Margin="0, 20" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+                <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
             </StackLayout>
 
             <Label FontSize="16" Padding="3,2,30,0">

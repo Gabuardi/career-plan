@@ -1,56 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NoPlanPage">
+             x:Class="CareerPlan.Views.NoPlanPage"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#8100B3" Offset="0.0" />
+            <GradientStop Color="#5E0082" Offset="0.6"/>
+            <GradientStop Color="#43005D" Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
 
-    <StackLayout>
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="50">
+        <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="White">
+                Parece que no tienes ningún plan de carrera en este dispositivo
+        </Label>
 
-
-
-
-        <StackLayout Orientation="Vertical"
-                     Spacing="10000"
-                     Padding="130">
-            <Label Text="No Hay Planes de &#10;Estudio Agregados"
-                                  
-                                  FontSize="17"
-                   FontAttributes="Bold"
-                                  TextColor="Black"
-                                   Padding="1"
-                                   WidthRequest="150"
-                                   HorizontalOptions="Center"
-               />
-        </StackLayout>
-
-
-        <StackLayout Orientation="Horizontal">
-
-            <Button x:Name="btnCrearNuevoPlan"
-                                    Text="Crear un Nuevo Plan"
-                                    TextColor="Black"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="White"
-                                    WidthRequest="200"
-                    Padding="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                   CornerRadius="10"
-                    FontAttributes="Bold"
+        <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
+            <Button.Text>
+                CREAR NUEVO PLAN DE CARRERA
+            </Button.Text>
+        </Button>
                                     
-                                    
-                                    
-                                    />
-        </StackLayout>
-
-        
-
-
-
-     
-
-
-
-
     </StackLayout>
-
 </ContentPage>
