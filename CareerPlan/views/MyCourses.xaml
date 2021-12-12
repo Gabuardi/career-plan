@@ -26,20 +26,49 @@
            >
 
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="100"  />
+                        <RowDefinition Height="20"  />
                         <RowDefinition Height="100" />
                         <RowDefinition Height="100" />
                         <RowDefinition Height="100"  />
+                        <RowDefinition Height="100"  />
 
-
-                    </Grid.RowDefinitions>
+                        </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
 
-                    </Grid.ColumnDefinitions>
+                        </Grid.ColumnDefinitions>
 
+
+                        <Label Text= "I Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="0" />
+
+                        <Label Text= "II Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="1" />
+                        <Label Text= "III Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="2" />
+
+                        <Label Text= "IV Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"  Grid.Row="0" Grid.Column="3" />
+                        <Label Text= "V Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="4" />
+
+                        <Label Text= "VI Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="5" />
+                        
+                         <Label Text= "VII Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="6" />
+                          <Label Text= "VIII Cuatrimestre" 
+                               FontAttributes="Bold" TextColor="Black" FontSize="15"   Grid.Row="0" Grid.Column="7" />
+
+                        
+                    
                     <Button Text="Matematicas Discretas" FontAttributes="Bold" TextColor="Black"
                    
                    FontSize="12" 
@@ -47,7 +76,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
-                Grid.Row="0"
+                Grid.Row="1"
                  Grid.Column="0" />
 
                     <Button Text="Introduccion a la Electronica" FontAttributes="Bold" TextColor="Black"
@@ -57,7 +86,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
-                Grid.Row="0"
+                Grid.Row="1"
                  Grid.Column="1"/>
                     <Button Text="Redes" FontAttributes="Bold" TextColor="White"
                    
@@ -66,7 +95,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
-                Grid.Row="0"
+                Grid.Row="1"
                  Grid.Column="2"/>
 
 
@@ -79,7 +108,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
-                   Grid.Row="1"
+                   Grid.Row="2"
                  Grid.Column="0"
                    />
                     <Button Text="Multimedia e Internet" FontAttributes="Bold" TextColor="White"
@@ -89,7 +118,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
-                   Grid.Row="1"
+                   Grid.Row="2"
                  Grid.Column="1"/>
                     <Button Text="Bases de Datos" FontAttributes="Bold" TextColor="Black"
                    
@@ -98,7 +127,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="White"
                       CornerRadius="10"
-                   Grid.Row="1"
+                   Grid.Row="2"
                  Grid.Column="2"/>
 
 
@@ -112,7 +141,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
-                   Grid.Row="2"
+                   Grid.Row="3"
                  Grid.Column="0"/>
                     <Button Text="Ingles 2" FontAttributes="Bold" TextColor="White"
                    
@@ -121,7 +150,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
-                   Grid.Row="2"
+                   Grid.Row="3"
                  Grid.Column="1"/>
                     <Button Text="Ingles 3" FontAttributes="Bold" TextColor="Black"
                    
@@ -130,7 +159,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="White"
                       CornerRadius="10"
-                   Grid.Row="2"
+                   Grid.Row="3"
                  Grid.Column="2"/>
 
 
@@ -142,7 +171,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="LightGray"
                       CornerRadius="10"
-                   Grid.Row="3"
+                   Grid.Row="4"
                  Grid.Column="1"/>
                     <Button Text="  Programacion Concurrente"  FontAttributes="Bold" TextColor="White"
                    
@@ -151,7 +180,7 @@
                                     BorderWidth="2"
                                     BackgroundColor="Purple"
                       CornerRadius="10"
-                   Grid.Row="3"
+                   Grid.Row="4"
                  Grid.Column="2" />
 
 
