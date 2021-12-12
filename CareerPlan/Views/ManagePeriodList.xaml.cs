@@ -13,10 +13,10 @@ namespace CareerPlan.Views
             InitializeComponent();
 
             PeriodsList.ItemsSource = periods;
-            periods.Add(new Period { Title="I Cuatrimeste" });
-            periods.Add(new Period { Title= "II Cuatrimeste" });
-            periods.Add(new Period { Title = "III Cuatrimeste" });
-            periods.Add(new Period { Title = "IV Cuatrimeste" });
+            periods.Add(new Period { Name="I Cuatrimeste" });
+            periods.Add(new Period { Name= "II Cuatrimeste" });
+            periods.Add(new Period { Name = "III Cuatrimeste" });
+            periods.Add(new Period { Name = "IV Cuatrimeste" });
 
         }
 

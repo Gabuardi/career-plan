@@ -18,7 +18,7 @@
                             <MenuItem Text="Eliminar" IsDestructive="True" />
                          </ViewCell.ContextActions>
                          <StackLayout Padding="15,0" VerticalOptions="Center">
-                              <Label Text="{Binding Title}" />
+                              <Label Text="{Binding Name}" />
                          </StackLayout>
                       </ViewCell>
                     </DataTemplate>
