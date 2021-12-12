@@ -2,7 +2,9 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ViewModel="clr-namespace:CareerPlan.ViewModels"
     x:Class="CareerPlan.Views.Homepage"
+    x:DataType="ViewModel:HomepageVM"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
     ios:Page.UseSafeArea="true"
@@ -12,27 +14,27 @@
     <StackLayout HorizontalOptions="Fill" Padding="15, 25, 15, 15" Spacing="40">
 
         <!--<< TITLE >>-->
-        <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold">Bachillerato en Ingeniería en Informática</Label>
+        <Label Text="{Binding CareerPlanName}" HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" />
 
         <!--<< CIRCLE PROGRESS BAR >>-->
-        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="75" HeightRequest="200" TrackInnerRadius="0.85"
+        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="{Binding CareerPlanProgress}" HeightRequest="200" TrackInnerRadius="0.85"
                                            TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3">
             <progressBar:SfCircularProgressBar.Content>
                  <StackLayout>
-                    <Label Text="75%" FontSize="30" TextColor="#8100B3"></Label>
+                    <Label Text="{Binding Path=CareerPlanProgress, StringFormat='{0}%'}" FontSize="30" TextColor="#8100B3"></Label>
                  </StackLayout>
             </progressBar:SfCircularProgressBar.Content>
         </progressBar:SfCircularProgressBar>
 
         <!--<< FEATURE POINTS >>-->
         <Grid>
-            <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
-                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Cursos Restantes</Label>
-                <Label HorizontalTextAlignment="Center">2 Cursos</Label>
-            </StackLayout>
             <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand">
+                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Cursos Restantes</Label>
+                <Label Text="{Binding Path=RemainingCourses, StringFormat='{0} Cursos'}" HorizontalTextAlignment="Center" />
+            </StackLayout>
+            <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
                 <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Tiempo Estimado</Label>
-                <Label HorizontalTextAlignment="Center">5 años 5 meses</Label>
+                <Label Text="{Binding Path=RemainingMonths, StringFormat='{0} Meses'}" HorizontalTextAlignment="Center" />
             </StackLayout>
         </Grid>
 
