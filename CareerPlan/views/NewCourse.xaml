@@ -3,120 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CareerPlan.views.NewCoursePage"
              Title="Nuevo Curso">
-    
- 
-    
-        <StackLayout Padding="20">
-            
+    <StackLayout Padding="15">
+        <Label Text="Nombre del Curso" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+        <Entry/>
 
+        <Label Text="Profesor" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+        <Entry/>
 
-            <Entry ></Entry>
-
-            <Label Text="Nombre del Curso" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
-
-            <Entry ></Entry>
-
-            <Label Text="Profesor" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
-
-
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-
-
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="150" />
-
-                </Grid.ColumnDefinitions>
-
-                <Entry
-                Grid.Row="0"
-                 Grid.Column="0"/>
-
-                <Entry
-                Grid.Row="0"
-                 Grid.Column="1"/>
-
-                <Label Text="Creditos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
-                   Grid.Row="1"
-                 Grid.Column="0"
-                   />
-                <Label Text="Precio" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
-                   Grid.Row="1"
-                 Grid.Column="1"/>
-
-                <Label Text="Cursos Requisitos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
-                   Grid.Row="2"
-                 Grid.Column="0"/>
-                <Button  Text="Anadir"
-                      Grid.Row="2"
-                 Grid.Column="1"
-                     
-                                    TextColor="White"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="Gray"
-                      CornerRadius="10"
-                     FontSize="16"
-
-                     />
-
-
-            </Grid>
-
-
-
-
-
-
-
-
-
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  VerticalOptions="EndAndExpand">
-                <Button  Text="Cancelar"
-                                    TextColor="White"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="Gray"
-                     
-                                    WidthRequest="170"
-                    Padding="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                   CornerRadius="10"
-                    FontAttributes="Bold"
-                     HeightRequest="5"
-                     FontSize="18"
-                                    />
-
-                <Button Text="Aceptar"
-                    TextColor="White"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="Gray"
-                     
-                                    WidthRequest="170"
-                    Padding="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                   CornerRadius="10"
-                    FontAttributes="Bold"
-                     FontSize="18"/>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Creditos" VerticalTextAlignment="Center" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+                <Entry WidthRequest="50"/>
             </StackLayout>
 
-            <Label FontSize="16" Padding="3,2,30,0">
-
-
-
-
-            </Label>
-
-
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Label Text="Precio" VerticalTextAlignment="Center" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+                <Entry HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
         </StackLayout>
 
-    </ContentPage>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Cursos Requisitos" VerticalTextAlignment="Center" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+            <Button Text="Anadir" HorizontalOptions="EndAndExpand" TextColor="White" BorderColor="Black" BorderWidth="2" BackgroundColor="Gray" CornerRadius="10" FontSize="16"/>
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  VerticalOptions="EndAndExpand">
+            <Button  Text="Cancelar" TextColor="White" BorderColor="Black" BorderWidth="2" BackgroundColor="Gray" Padding="20" HorizontalOptions="CenterAndExpand" CornerRadius="10" FontAttributes="Bold" FontSize="18"/>
+            <Button Text="Aceptar" TextColor="White" BorderColor="Black" BorderWidth="2" BackgroundColor="Gray" Padding="20" HorizontalOptions="CenterAndExpand" CornerRadius="10" FontAttributes="Bold" FontSize="18"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
