@@ -2,25 +2,26 @@
 {
     public class HomepageVM
     {
+        readonly private Models.CareerPlan currentCareerPlan = AppStorage.CareerPlan;
 
         public string CareerPlanName
         {
-            get { return App.CurrentCareerPlan.Name; }
+            get { return currentCareerPlan.Name; }
         }
 
         public int CareerPlanProgress
         {
-            get { return App.CurrentCareerPlan.Progress; }
+            get { return currentCareerPlan.Progress; }
         }
 
         public int RemainingCourses
         {
-            get { return App.CurrentCareerPlan.RemainingCourses; }
+            get { return currentCareerPlan.RemainingCourses; }
         }
 
         public int RemainingMonths
         {
-            get { return App.CurrentCareerPlan.RemainingMonths; }
+            get { return currentCareerPlan.RemainingMonths; }
         }
 
     }
