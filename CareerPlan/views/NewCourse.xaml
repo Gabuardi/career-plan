@@ -19,14 +19,14 @@
         <Grid ColumnSpacing="30">
             <StackLayout Grid.Column="0" >
                 <Label Text="Creditos" FontSize="18" FontAttributes="Bold"/>
-                <Entry HorizontalOptions="FillAndExpand"/>
+                <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
             </StackLayout>
 
             <StackLayout Grid.Column="1">
                 <Label Text="Precio" FontSize="18" FontAttributes="Bold"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="$" VerticalTextAlignment="Center" FontSize="18"/>
-                    <Entry HorizontalOptions="FillAndExpand"/>
+                    <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
                 </StackLayout>
             </StackLayout>
         </Grid>
