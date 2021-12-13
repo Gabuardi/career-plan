@@ -12,7 +12,7 @@ namespace CareerPlan.views
 {
     public partial class NewCoursePage : ContentPage
     {
-        readonly ObservableCollection<Period> periods = new ObservableCollection<Period>();
+        readonly ObservableCollection<Course> periods = new ObservableCollection<Course>();
 
         readonly ObservableCollection<Course> searchSource = new ObservableCollection<Course>
         {
@@ -26,24 +26,11 @@ namespace CareerPlan.views
             InitializeComponent();
 
             PeriodsList.ItemsSource = periods;
-            periods.Add(new Period { Name="I Cuatrimeste" });
-            periods.Add(new Period { Name = "II Cuatrimeste" });
-            periods.Add(new Period { Name = "III Cuatrimeste" });
-            periods.Add(new Period { Name = "IV Cuatrimeste" });
+            periods.Add(new Course { Name="I Cuatrimeste" });
+            periods.Add(new Course { Name = "II Cuatrimeste" });
+            periods.Add(new Course { Name = "III Cuatrimeste" });
+            periods.Add(new Course { Name = "IV Cuatrimeste" });
             SearchResultsListView.ItemsSource = searchSource;
-        }
-
-        void SearchBar_Focused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
-        {
-            
-            PeriodsList.IsVisible = false;
-            SearchResultsPanel.IsVisible = true;
-        }
-
-        void SearchBar_Unfocused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
-        {
-            SearchResultsPanel.IsVisible = false;
-            PeriodsList.IsVisible = true;
         }
 
         List<Course> SearchCourse(String searchQuery)
@@ -59,10 +46,30 @@ namespace CareerPlan.views
             return searchResults;
         }
 
+        void SearchBar_Focused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
+        {
+            
+            PeriodsList.IsVisible = false;
+            SearchResultsPanel.IsVisible = true;
+        }
+
+        void SearchBar_Unfocused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
+        {
+            SearchResultsPanel.IsVisible = false;
+            PeriodsList.IsVisible = true;
+        }
+
         void SearchBar_TextChanged(System.Object sender, Xamarin.Forms.TextChangedEventArgs e)
         {
             SearchBar searchBar = (SearchBar)sender;
             SearchResultsListView.ItemsSource = SearchCourse(searchBar.Text);
+        }
+
+        void SearchResultsListView_ItemTapped(System.Object sender, Xamarin.Forms.ItemTappedEventArgs e)
+        {
+            Course selectedCourse = (Course)e.Item;
+            searchSource.Remove(selectedCourse);
+            periods.Add(selectedCourse);
         }
     }
 }

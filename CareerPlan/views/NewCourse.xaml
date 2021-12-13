@@ -46,7 +46,8 @@
             <!--<< LIST CONTROLS >>-->
             <StackLayout Spacing="10">
                 <Label Text="Cursos Requeridos" Margin="15, 0" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
-                <SearchBar Placeholder="Buscar curso"  BackgroundColor="#ECECEC" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused" TextChanged="SearchBar_TextChanged"/>
+                <SearchBar x:Name="CoursesSearchBar" Placeholder="Buscar curso"  BackgroundColor="#ECECEC"
+                           Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused" TextChanged="SearchBar_TextChanged"/>
             </StackLayout>
 
             <!--<< LIST DATA >>-->
@@ -70,7 +71,8 @@
                 <Label Margin="15, 0, 0, 0" HorizontalTextAlignment="Center" FontSize="14" TextColor="#808080">
                     Selecciona uno de los resultados para agregarlo como requisito del curso
                 </Label>
-                <ListView x:Name="SearchResultsListView" SelectionMode="None" BackgroundColor="Transparent">
+                <ListView x:Name="SearchResultsListView" SelectionMode="None" BackgroundColor="Transparent"
+                          ItemTapped="SearchResultsListView_ItemTapped">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
