@@ -7,16 +7,18 @@
     BackgroundColor="#F7F7F7">
 
     <StackLayout Padding="15" Spacing="20">
+
+        <!--<< TEXT ENTRIES >>-->
         <StackLayout>
             <Label Text="Nombre del Curso" FontSize="18" FontAttributes="Bold"/>
             <Entry/>
         </StackLayout>
-
         <StackLayout>
             <Label Text="Profesor" FontSize="18" FontAttributes="Bold"/>
             <Entry/>
         </StackLayout>
 
+        <!--<< NUMERIC ENTRIES >>-->
         <Grid ColumnSpacing="30">
             <StackLayout Grid.Column="0" >
                 <Label Text="Creditos" FontSize="18" FontAttributes="Bold"/>
@@ -32,11 +34,13 @@
             </StackLayout>
         </Grid>
 
+        <!--<< LIST CONTROLS >>-->
         <StackLayout Orientation="Horizontal">
             <Label Text="Cursos Requisitos" VerticalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
             <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
         </StackLayout>
 
+        <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
             <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
             <Button Text="ACEPTAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
