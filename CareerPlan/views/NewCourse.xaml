@@ -1,122 +1,77 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.views.NewCoursePage"
-             Title="Nuevo Curso">
-    
- 
-    
-        <StackLayout Padding="20">
-            
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    x:Class="CareerPlan.views.NewCoursePage"
+    ios:Page.UseSafeArea="true"
+    Title="Nuevo Curso"
+    BackgroundColor="#F7F7F7">
 
+    <StackLayout Padding="0, 15" Spacing="20">
 
-            <Entry ></Entry>
-
-            <Label Text="Nombre del Curso" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
-
-            <Entry ></Entry>
-
-            <Label Text="Profesor" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
-
-
-
-            <Grid>
-
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*" />
-                    <RowDefinition Height="*" />
-                    <RowDefinition Height="*" />
-
-
-                </Grid.RowDefinitions>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="150" />
-
-                </Grid.ColumnDefinitions>
-
-                <Entry
-                Grid.Row="0"
-                 Grid.Column="0"/>
-
-                <Entry
-                Grid.Row="0"
-                 Grid.Column="1"/>
-
-                <Label Text="Creditos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
-                   Grid.Row="1"
-                 Grid.Column="0"
-                   />
-                <Label Text="Precio" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
-                   Grid.Row="1"
-                 Grid.Column="1"/>
-
-                <Label Text="Cursos Requisitos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"
-                   Grid.Row="2"
-                 Grid.Column="0"/>
-                <Button  Text="Anadir"
-                      Grid.Row="2"
-                 Grid.Column="1"
-                     
-                                    TextColor="White"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="Gray"
-                      CornerRadius="10"
-                     FontSize="16"
-
-                     />
-
-
-            </Grid>
-
-
-
-
-
-
-
-
-
-
-            <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  VerticalOptions="EndAndExpand">
-                <Button  Text="Cancelar"
-                                    TextColor="White"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="Gray"
-                     
-                                    WidthRequest="170"
-                    Padding="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                   CornerRadius="10"
-                    FontAttributes="Bold"
-                     HeightRequest="5"
-                     FontSize="18"
-                                    />
-
-                <Button Text="Aceptar"
-                    TextColor="White"
-                                    BorderColor="Black"
-                                    BorderWidth="2"
-                                    BackgroundColor="Gray"
-                     
-                                    WidthRequest="170"
-                    Padding="20"
-                                    HorizontalOptions="CenterAndExpand"
-                                   CornerRadius="10"
-                    FontAttributes="Bold"
-                     FontSize="18"/>
-            </StackLayout>
-
-            <Label FontSize="16" Padding="3,2,30,0">
-
-
-
-
-            </Label>
-
-
+        <!--<< TEXT ENTRIES >>-->
+        <StackLayout Padding="15, 0">
+            <Label Text="Nombre del Curso" FontSize="18" FontAttributes="Bold"/>
+            <Entry/>
+        </StackLayout>
+        <StackLayout Padding="15, 0">
+            <Label Text="Profesor" FontSize="18" FontAttributes="Bold"/>
+            <Entry/>
         </StackLayout>
 
-    </ContentPage>
+        <!--<< NUMERIC ENTRIES >>-->
+        <Grid Padding="15, 0" ColumnSpacing="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <StackLayout Grid.Column="0" >
+                <Label Text="Creditos" FontSize="18" FontAttributes="Bold"/>
+                <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
+            </StackLayout>
+
+            <StackLayout Grid.Column="1">
+                <Label Text="Precio" FontSize="18" FontAttributes="Bold"/>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="$" VerticalTextAlignment="Center" FontSize="18"/>
+                    <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+
+        <!--<< REQUIRED COURSES LIST >>-->
+        <StackLayout Spacing="0">
+
+            <!--<< LIST CONTROLS >>-->
+            <StackLayout Orientation="Horizontal" Padding="15, 0">
+                <Label Text="Cursos Requisitos" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
+                <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
+            </StackLayout>
+
+            <!--<< LIST DATA >>-->
+            <ListView x:Name="PeriodsList" BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Editar" />
+                                <MenuItem Text="Eliminar" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="20, 0" VerticalOptions="Center">
+                                <Label Text="{Binding Title}" />
+                            </StackLayout>
+                      </ViewCell>
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
+            <Button Text="ACEPTAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
