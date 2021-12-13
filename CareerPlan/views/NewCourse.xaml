@@ -48,6 +48,7 @@
                 <Label Text="Cursos Requisitos" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
                 <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
             </StackLayout>
+            <SearchBar BackgroundColor="Transparent" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused"/>
 
             <!--<< LIST DATA >>-->
             <ListView x:Name="PeriodsList" BackgroundColor="Transparent">
@@ -59,12 +60,15 @@
                                 <MenuItem Text="Eliminar" IsDestructive="True" />
                             </ViewCell.ContextActions>
                             <StackLayout Padding="20, 0" VerticalOptions="Center">
-                                <Label Text="{Binding Title}" />
+                                <Label Text="{Binding Name}" />
                             </StackLayout>
-                      </ViewCell>
+                        </ViewCell>
                     </DataTemplate>
                   </ListView.ItemTemplate>
             </ListView>
+
+            <ListView x:Name="SearchResultsListView" IsVisible="false"/>
+                
         </StackLayout>
 
         <!--<< ACTION BUTTONS >>-->
