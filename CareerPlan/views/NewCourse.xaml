@@ -46,7 +46,7 @@
             <!--<< LIST CONTROLS >>-->
             <StackLayout Spacing="10">
                 <Label Text="Cursos Requeridos" Margin="15, 0" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
-                <SearchBar Placeholder="Buscar curso"  BackgroundColor="#ECECEC" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused"/>
+                <SearchBar Placeholder="Buscar curso"  BackgroundColor="#ECECEC" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused" TextChanged="SearchBar_TextChanged"/>
             </StackLayout>
 
             <!--<< LIST DATA >>-->

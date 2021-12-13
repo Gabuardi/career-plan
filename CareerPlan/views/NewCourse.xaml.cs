@@ -14,7 +14,7 @@ namespace CareerPlan.views
     {
         readonly ObservableCollection<Period> periods = new ObservableCollection<Period>();
 
-        readonly ObservableCollection<Course> searchResults = new ObservableCollection<Course>
+        readonly ObservableCollection<Course> searchSource = new ObservableCollection<Course>
         {
             new Course { Name="Inglés IV" },
             new Course { Name="Matemáticas Discretas" },
@@ -30,12 +30,12 @@ namespace CareerPlan.views
             periods.Add(new Period { Name = "II Cuatrimeste" });
             periods.Add(new Period { Name = "III Cuatrimeste" });
             periods.Add(new Period { Name = "IV Cuatrimeste" });
-
-            SearchResultsListView.ItemsSource = searchResults;
+            SearchResultsListView.ItemsSource = searchSource;
         }
 
         void SearchBar_Focused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
         {
+            
             PeriodsList.IsVisible = false;
             SearchResultsPanel.IsVisible = true;
         }
@@ -44,6 +44,25 @@ namespace CareerPlan.views
         {
             SearchResultsPanel.IsVisible = false;
             PeriodsList.IsVisible = true;
+        }
+
+        List<Course> SearchCourse(String searchQuery)
+        {
+            string lowerCaseSearchQuery = searchQuery.ToLower();
+            List<Course> searchResults = new List<Course>();
+
+            foreach (Course course in searchSource)
+            {
+                if (course.Name.ToLower().Contains(lowerCaseSearchQuery))
+                { searchResults.Add(course); }
+            }
+            return searchResults;
+        }
+
+        void SearchBar_TextChanged(System.Object sender, Xamarin.Forms.TextChangedEventArgs e)
+        {
+            SearchBar searchBar = (SearchBar)sender;
+            SearchResultsListView.ItemsSource = SearchCourse(searchBar.Text);
         }
     }
 }
