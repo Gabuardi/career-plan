@@ -42,8 +42,8 @@ namespace CareerPlan.views
 
         void SearchBar_Unfocused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
         {
-            PeriodsList.IsVisible = true;
             SearchResultsPanel.IsVisible = false;
+            PeriodsList.IsVisible = true;
         }
     }
 }

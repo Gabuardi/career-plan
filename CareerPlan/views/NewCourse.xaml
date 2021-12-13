@@ -50,7 +50,7 @@
             </StackLayout>
 
             <!--<< LIST DATA >>-->
-            <ListView x:Name="PeriodsList" BackgroundColor="Transparent" IsVisible="true">
+            <ListView x:Name="PeriodsList" SelectionMode="None" BackgroundColor="Transparent" IsVisible="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -70,7 +70,7 @@
                 <Label Margin="15, 0, 0, 0" HorizontalTextAlignment="Center" FontSize="14" TextColor="#808080">
                     Selecciona uno de los resultados para agregarlo como requisito del curso
                 </Label>
-                <ListView x:Name="SearchResultsListView" BackgroundColor="Transparent">
+                <ListView x:Name="SearchResultsListView" SelectionMode="None" BackgroundColor="Transparent">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
