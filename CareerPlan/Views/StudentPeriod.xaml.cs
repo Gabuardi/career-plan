@@ -13,8 +13,8 @@ namespace CareerPlan.Views
             InitializeComponent();
 
             StudentPeriodList.ItemsSource = Studentperiods;
-            Studentperiods.Add(new Period { Title = "Fundamentos de Programación" });
-            Studentperiods.Add(new Period { Title = "Matemáticas Discretas" });
+            Studentperiods.Add(new Period { Name = "Fundamentos de Programación" });
+            Studentperiods.Add(new Period { Name = "Matemáticas Discretas" });
 
 
         }
