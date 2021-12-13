@@ -12,9 +12,9 @@ namespace CareerPlan.Views
         {
             InitializeComponent();
 
-            StudentPeriodList.ItemsSource = Studentperiods;
-            Studentperiods.Add(new Period { Name = "Fundamentos de Programación" });
-            Studentperiods.Add(new Period { Name = "Matemáticas Discretas" });
+            //StudentPeriodList.ItemsSource = Studentperiods;
+            //Studentperiods.Add(new Period { Name = "Fundamentos de Programación" });
+            //Studentperiods.Add(new Period { Name = "Matemáticas Discretas" });
         }
 
         public ObservableCollection<Period> StudentPeriods { get { return Studentperiods; } }
