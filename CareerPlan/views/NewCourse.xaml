@@ -46,7 +46,6 @@
             <!--<< LIST CONTROLS >>-->
             <StackLayout Orientation="Horizontal" Padding="15, 0">
                 <Label Text="Cursos Requisitos" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
-                <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
             </StackLayout>
             <SearchBar BackgroundColor="Transparent" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused"/>
 
