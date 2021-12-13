@@ -20,6 +20,10 @@
 
         <!--<< NUMERIC ENTRIES >>-->
         <Grid ColumnSpacing="30">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
             <StackLayout Grid.Column="0" >
                 <Label Text="Creditos" FontSize="18" FontAttributes="Bold"/>
                 <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
@@ -34,11 +38,33 @@
             </StackLayout>
         </Grid>
 
-        <!--<< LIST CONTROLS >>-->
-        <StackLayout Orientation="Horizontal">
-            <Label Text="Cursos Requisitos" VerticalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
-            <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
+        <!--<< REQUIRED COURSES LIST >>-->
+        <StackLayout Spacing="0">
+              <!--<< LIST CONTROLS >>-->
+            <StackLayout Grid.Row="0" Orientation="Horizontal">
+                <Label Text="Cursos Requisitos" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
+                <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
+            </StackLayout>
+
+            <!--<< LIST DATA >>-->
+            <ListView Grid.Row="1" x:Name="PeriodsList" BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Editar" />
+                                <MenuItem Text="Eliminar" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="20, 0" VerticalOptions="Center">
+                                <Label Text="{Binding Title}" />
+                            </StackLayout>
+                      </ViewCell>
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
+
+          
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
