@@ -22,6 +22,8 @@
                     Text="Career Plan Summary" BorderWidth="2" BorderColor="#000"/>
             <Button Grid.Row="6" Clicked="GoToHomepage"
                     Text="Homepage" BorderWidth="2" BorderColor="#000"/>
+            <Button Grid.Row="7" Clicked="GotoCoursesDetailPage"
+                    Text="Course Detail" BorderWidth="2" BorderColor="#000"/>
         </Grid>
     </StackLayout>
 </ContentPage>

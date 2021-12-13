@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CareerPlan.Views.CoursesDetailPage"
+             Title="Detalle del curso">
+    <StackLayout Padding="20">
+
+
+        <Label Text="Nombre del Curso" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+        <Entry IsEnabled="False" Text="Programación I" ></Entry>
+
+
+
+
+
+        <Label Text="Facultad" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+        <Entry IsEnabled="False" Text="Tecnologías de la Información" ></Entry>
+
+
+        <Label Text="Profesor" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+        <Entry IsEnabled="False" Text="Warner Rodríguez" ></Entry>
+
+        <Label Text="Créditos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+        <Entry IsEnabled="False" Text="XXX" ></Entry>
+
+        <Label Text="Requisitos" FontSize="20" Padding="2,0,30,0" FontAttributes="Bold" TextColor="Black"/>
+
+        <Entry IsEnabled="False" Text="XXX" ></Entry>
+
+
+
+
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center"  VerticalOptions="EndAndExpand">
+
+
+            <Button Text="MARCAR COMO APROBADO"
+                    TextColor="White"
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="#A9D42C"
+                     
+                                    WidthRequest="1700"
+                    Padding="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                   CornerRadius="10"
+                    FontAttributes="Bold"
+                     FontSize="18"/>
+
+            <Button Text="MARCAR COMO PENDIENTE"
+                    TextColor="White"
+                                    BorderColor="Black"
+                                    BorderWidth="2"
+                                    BackgroundColor="Gray"
+                     
+                                    WidthRequest="1700"
+                    Padding="20"
+                                    HorizontalOptions="CenterAndExpand"
+                                   CornerRadius="10"
+                    FontAttributes="Bold"
+                     FontSize="18"/>
+        </StackLayout>
+
+        <Label FontSize="16" Padding="3,2,30,0">
+
+
+
+
+        </Label>
+
+
+    </StackLayout>
+
+</ContentPage>
