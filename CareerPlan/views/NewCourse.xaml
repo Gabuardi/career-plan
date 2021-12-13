@@ -3,7 +3,8 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CareerPlan.views.NewCoursePage"
-    Title="Nuevo Curso">
+    Title="Nuevo Curso"
+    BackgroundColor="#F7F7F7">
 
     <StackLayout Padding="15" Spacing="20">
         <StackLayout>
@@ -33,12 +34,12 @@
 
         <StackLayout Orientation="Horizontal">
             <Label Text="Cursos Requisitos" VerticalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
-            <Button Text="Anadir" HorizontalOptions="EndAndExpand" TextColor="White" BackgroundColor="Gray"/>
+            <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
         </StackLayout>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="White" BackgroundColor="Gray"/>
-            <Button Text="ACEPTAR" Padding="20, 0" FontAttributes="Bold" TextColor="White" BackgroundColor="Gray"/>
+            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
+            <Button Text="ACEPTAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
         </StackLayout>
 
     </StackLayout>
