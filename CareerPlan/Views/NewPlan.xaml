@@ -11,17 +11,17 @@
 
         <!--<< ENTRIES >>-->
         <StackLayout>
-            <Label Text="Nombre" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Label Text="Nombre" Padding="2,0,30,0" FontSize="18" FontAttributes="Bold"/>
             <Entry/>
         </StackLayout>
         <StackLayout>
-            <Label Text="Código" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Label Text="Código" Padding="2,0,30,0" FontSize="18" FontAttributes="Bold"/>
             <Entry/>
         </StackLayout>
 
         <!--<< TEXT AREA >>-->
         <StackLayout>
-            <Label Text="Descripción" FontSize="16" Padding="2,0,30,0" FontAttributes="Bold"/>
+            <Label Text="Descripción" Padding="2,0,30,0" FontSize="18" FontAttributes="Bold"/>
             <Grid>
                 <custom:OutlineEditor AutoSize="TextChanges"/>
             </Grid>
