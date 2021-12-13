@@ -44,18 +44,17 @@
         <StackLayout Spacing="0">
 
             <!--<< LIST CONTROLS >>-->
-            <StackLayout Orientation="Horizontal" Padding="15, 0">
-                <Label Text="Cursos Requisitos" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
+            <StackLayout Spacing="10">
+                <Label Text="Cursos Requeridos" Margin="15, 0" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
+                <SearchBar Placeholder="Buscar curso"  BackgroundColor="#ECECEC" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused"/>
             </StackLayout>
-            <SearchBar BackgroundColor="Transparent" Focused="SearchBar_Focused" Unfocused="SearchBar_Unfocused"/>
 
             <!--<< LIST DATA >>-->
-            <ListView x:Name="PeriodsList" BackgroundColor="Transparent">
+            <ListView x:Name="PeriodsList" BackgroundColor="Transparent" IsVisible="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <ViewCell.ContextActions>
-                                <MenuItem Text="Editar" />
                                 <MenuItem Text="Eliminar" IsDestructive="True" />
                             </ViewCell.ContextActions>
                             <StackLayout Padding="20, 0" VerticalOptions="Center">
@@ -66,7 +65,23 @@
                   </ListView.ItemTemplate>
             </ListView>
 
-            <ListView x:Name="SearchResultsListView" IsVisible="false"/>
+            <!--<< SEARCH RESULTS >>-->
+            <StackLayout x:Name="SearchResultsPanel" Padding="0, 0, 15, 0" BackgroundColor="#ECECEC" IsVisible="false">
+                <Label Margin="15, 0, 0, 0" HorizontalTextAlignment="Center" FontSize="14" TextColor="#808080">
+                    Selecciona uno de los resultados para agregarlo como requisito del curso
+                </Label>
+                <ListView x:Name="SearchResultsListView" BackgroundColor="Transparent">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20, 0" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                  </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
                 
         </StackLayout>
 
