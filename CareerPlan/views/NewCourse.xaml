@@ -32,13 +32,13 @@
         </Grid>
 
         <StackLayout Orientation="Horizontal">
-            <Label Text="Cursos Requisitos" VerticalTextAlignment="Center" FontSize="18" Padding="2,0,30,0" FontAttributes="Bold"/>
-            <Button Text="Anadir" HorizontalOptions="EndAndExpand" FontSize="18" TextColor="White" BorderColor="Black" BorderWidth="2" BackgroundColor="Gray" CornerRadius="10"/>
+            <Label Text="Cursos Requisitos" VerticalTextAlignment="Center" FontSize="18" FontAttributes="Bold"/>
+            <Button Text="Anadir" HorizontalOptions="EndAndExpand" TextColor="White" BackgroundColor="Gray"/>
         </StackLayout>
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  VerticalOptions="EndAndExpand">
-            <Button  Text="Cancelar" TextColor="White" BorderColor="Black" BorderWidth="2" BackgroundColor="Gray" Padding="20" HorizontalOptions="CenterAndExpand" CornerRadius="10" FontAttributes="Bold" FontSize="18"/>
-            <Button Text="Aceptar" TextColor="White" BorderColor="Black" BorderWidth="2" BackgroundColor="Gray" Padding="20" HorizontalOptions="CenterAndExpand" CornerRadius="10" FontAttributes="Bold" FontSize="18"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
+            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="White" BackgroundColor="Gray"/>
+            <Button Text="ACEPTAR" Padding="20, 0" FontAttributes="Bold" TextColor="White" BackgroundColor="Gray"/>
         </StackLayout>
 
     </StackLayout>
