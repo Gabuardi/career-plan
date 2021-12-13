@@ -40,7 +40,8 @@
 
         <!--<< REQUIRED COURSES LIST >>-->
         <StackLayout Spacing="0">
-              <!--<< LIST CONTROLS >>-->
+
+            <!--<< LIST CONTROLS >>-->
             <StackLayout Grid.Row="0" Orientation="Horizontal">
                 <Label Text="Cursos Requisitos" VerticalTextAlignment="End" FontSize="18" FontAttributes="Bold"/>
                 <Button Text="+" HorizontalOptions="EndAndExpand" TextColor="#FFF" BackgroundColor="#A9D42C"/>
@@ -63,8 +64,6 @@
                   </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-
-          
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
