@@ -20,6 +20,9 @@
             <Button.Text>
                 CREAR NUEVO PLAN DE CARRERA
             </Button.Text>
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf067;" Size="25" Color="#FFF" />
+            </Button.ImageSource>
         </Button>
                                     
     </StackLayout>
