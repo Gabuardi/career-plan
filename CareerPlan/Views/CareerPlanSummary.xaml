@@ -5,6 +5,7 @@
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     x:Class="CareerPlan.Views.CareerPlanSummaryPage"
     ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
     BackgroundColor="#F7F7F7">
 
     <StackLayout Padding="15" Spacing="20" VerticalOptions="Fill">
@@ -49,13 +50,14 @@
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Margin="0, 15, 0, 0" VerticalOptions="EndAndExpand" HorizontalOptions="Center" Orientation="Horizontal">
-            <ImageButton Padding="20, 0" BackgroundColor="#FA7F28">
+            <ImageButton Padding="20, 0" BackgroundColor="#FA7F28" Clicked="Edit_Button_Clicked">
                 <ImageButton.Source>
                     <FontImageSource FontFamily="FA6Solid" Glyph="&#xf044;" Size="25" Color="#FFF"/>
                 </ImageButton.Source>
             </ImageButton>
-            <Button Text="SELECCIONAR" FontSize="18" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
-            <ImageButton Padding="20, 0" BackgroundColor="#FA7F28">
+            <Button Text="SELECCIONAR" FontSize="18" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"
+                    Clicked="Select_Button_Clicked"/>
+            <ImageButton Padding="20, 0" BackgroundColor="#FA7F28" Clicked="View_Button_Clicked">
                 <ImageButton.Source>
                     <FontImageSource FontFamily="FA6Solid" Glyph="&#xf06e;" Size="25" Color="#FFF"/>
                 </ImageButton.Source>
