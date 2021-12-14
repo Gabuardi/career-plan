@@ -32,12 +32,14 @@
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"
+                    Clicked="Cancel_Button_Clicked">
                 <Button.ImageSource>
                     <FontImageSource FontFamily="FA6Solid" Glyph="&#xf057;" Size="23" Color="#FFF"/>
                 </Button.ImageSource>
             </Button>
-            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"
+                    Clicked="Next_Button_Clicked">
                 <Button.ImageSource>
                     <FontImageSource FontFamily="FA6Solid" Glyph="&#xf138;" Size="23" Color="#FFF"/>
                 </Button.ImageSource>
