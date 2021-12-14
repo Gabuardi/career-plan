@@ -20,8 +20,39 @@
                     <Label Text="I Cuatrimestre" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
                     <Button Text="dsaddsadsasdasadas dsasad" HeightRequest="70" Padding="10, 0" CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3">
                     </Button>
-                     <Button Text="dsadsad" Padding="10, 30" CornerRadius="15" BorderWidth="2" BorderColor="#8100B3" TextColor="#8100B3"></Button>
-                    <custom:MultiLineButton Text="seminario de investigación: Costa Rica y el mundo" HeightRequest="70" Padding="10, 0" HorizontalOptions="Center" VerticalOptions="Fill" CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3"/>
+                     <Button Text="dsadsad" Padding="10, 30" CornerRadius="15" BorderWidth="2" BorderColor="#8100B3" TextColor="#8100B3">
+                         
+                     </Button>
+                    <RelativeLayout VerticalOptions="Fill">
+                        <custom:MultiLineButton Text="seminario de investigación: Costa Rica y el mundo" HeightRequest="70" Padding="10, 0"
+                                                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                                                
+                                                    CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3"/>
+                        <Image RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-15}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=-10}">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf111;" Size="25" Color="#FFF"/>
+                            </Image.Source>
+                        </Image>
+                        <Image RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-15}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=-10}">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf058;" Size="25" Color="#A9D42C"/>
+                            </Image.Source>
+                        </Image>
+                    </RelativeLayout>
+                       <RelativeLayout HorizontalOptions="Fill">
+                        <custom:MultiLineButton Text="seminario de investigación: Costa Rica y el mundo" HeightRequest="70" Padding="10, 0"
+                                                 RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}"
+                                                
+                                                    CornerRadius="15" TextColor="#8100B3" BorderWidth="2" BorderColor="#8100B3"/>
+                        <Image RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-15}"
+                               RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=-13}">
+                            <Image.Source>
+                                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf023;" Size="25" Color="#FA7F28"/>
+                            </Image.Source>
+                        </Image>
+                    </RelativeLayout>
                 </StackLayout>
                 <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#FFF"></StackLayout>
                 <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#ebebeb">
