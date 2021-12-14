@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using CareerPlan.Models;
+using CareerPlan.Views;
+using Newtonsoft.Json;
 using Xamarin.Forms;
 
 namespace CareerPlan.views
@@ -73,6 +75,7 @@ namespace CareerPlan.views
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
+            AppStorage.TempPeriod.CoursesList.Add(newCourse);
             await Navigation.PopAsync();
         }
     }

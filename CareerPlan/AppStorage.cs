@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using CareerPlan.Models;
+using Newtonsoft.Json;
 using Xamarin.Essentials;
 
 namespace CareerPlan
@@ -7,6 +8,7 @@ namespace CareerPlan
     {
         readonly private static string careerPlanPreferenceName = "StoredCareerPlan";
         readonly private static Models.CareerPlan tempCareerPlan = new Models.CareerPlan();
+        private static Period tempPeriod = new Period();
 
         public static Models.CareerPlan CareerPlan
         {
@@ -31,6 +33,12 @@ namespace CareerPlan
         public static Models.CareerPlan TempCareerPlan
         {
             get { return tempCareerPlan; }
+        }
+
+        public static Period TempPeriod
+        {
+            set { tempPeriod = value; }
+            get { return tempPeriod; }
         }
 
     }

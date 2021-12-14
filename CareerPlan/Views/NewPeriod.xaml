@@ -44,7 +44,7 @@
                                 <MenuItem Text="Editar" Clicked="Edit_Course_Clicked"/>
                                 <MenuItem Text="Eliminar" IsDestructive="True"/>
                             </ViewCell.ContextActions>
-                            <StackLayout Padding="15,0" VerticalOptions="Center">
+                            <StackLayout x:DataType="Model:Course" Padding="15,0" VerticalOptions="Center">
                                 <Label Text="{Binding Name}"/>
                             </StackLayout>
                         </ViewCell>

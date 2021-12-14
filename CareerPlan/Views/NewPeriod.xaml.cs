@@ -6,12 +6,12 @@ namespace CareerPlan.Views
 {
     public partial class NewPeriodPage : ContentPage
     {
-        private Period newPeriod = new Period();
 
         public NewPeriodPage()
         {
             InitializeComponent();
-            BindingContext = newPeriod;
+            AppStorage.TempPeriod = new Period();
+            BindingContext = AppStorage.TempPeriod;
         }
 
         async void Add_Button_Clicked(System.Object sender, System.EventArgs e)
@@ -26,7 +26,7 @@ namespace CareerPlan.Views
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            AppStorage.TempCareerPlan.PeriodsList.Add(newPeriod);
+            AppStorage.TempCareerPlan.PeriodsList.Add(AppStorage.TempPeriod);
             await Navigation.PopAsync();
         }
     }
