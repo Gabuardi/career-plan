@@ -14,6 +14,11 @@ namespace CareerPlan.ViewModels
                 CoursesList = new List<Course> {
                     new Course { Name = "Ciencias" },
                     new Course { Name="Expresiones del Espiritu Humanoide", IsLocked=false},
+                    new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true},
+                    new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true},
+                    new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true},
+                    new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true},
+                    new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true},
                     new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true}
                 }
             },
@@ -23,6 +28,14 @@ namespace CareerPlan.ViewModels
                 CoursesList = new List<Course> {
                     new Course { Name="Lammas Infernales", IsApproved=true, IsLocked=false },
                     new Course { Name="Torturación IV", IsLocked=true }
+                }
+            },
+            new Period {
+                Name = "Heaven",
+                Months = 2451,
+                CoursesList = new List<Course> {
+                    new Course { Name="Lammas Celestiales", IsLocked=true },
+                    new Course { Name="Evalacion V", IsLocked=true }
                 }
             }
         };
