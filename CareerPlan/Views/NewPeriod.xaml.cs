@@ -20,19 +20,19 @@ namespace CareerPlan.Views
 
         public ObservableCollection<Period> StudentPeriods { get { return Studentperiods; } }
 
-        void Add_Button_Clicked(System.Object sender, System.EventArgs e)
+        async void Add_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new NewCoursePage());
+            await Navigation.PushAsync(new NewCoursePage());
         }
 
-        void Edit_Course_Clicked(System.Object sender, System.EventArgs e)
+        async void Edit_Course_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PushAsync(new NewPeriodPage());
+            await Navigation.PushAsync(new NewPeriodPage());
         }
 
-        void Done_Button_Clicked(System.Object sender, System.EventArgs e)
+        async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PopAsync();
+            await Navigation.PopAsync();
         }
     }
 }

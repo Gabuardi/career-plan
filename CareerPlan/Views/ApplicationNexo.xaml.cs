@@ -16,11 +16,6 @@ namespace CareerPlan.Views
             Navigation.PushAsync(new NoPlanPage());
         }
 
-        async void GoToNewCoursePage(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new NewCoursePage());
-        }
-
         void GoToCareerPlanSummary(object sender, EventArgs e)
         {
             Navigation.PushAsync(new CareerPlanSummaryPage());
