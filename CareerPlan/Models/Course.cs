@@ -10,7 +10,7 @@ namespace CareerPlan.Models
         public double Price { get; set; }
         public bool IsApproved { get; set; }
         public bool IsLocked { get; set; } = true;
-        public ObservableCollection<Course> RequiredCourses { get; set; }
-        public ObservableCollection<Course> DepententCourses { get; set; }
+        public ObservableCollection<Course> RequiredCourses { get; set; } = new ObservableCollection<Course>();
+        public ObservableCollection<Course> DepententCourses { get; set; } = new ObservableCollection<Course>();
     }
 }
