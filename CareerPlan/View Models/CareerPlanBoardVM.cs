@@ -8,10 +8,23 @@ namespace CareerPlan.ViewModels
     {
         private ObservableCollection<Period> periodsList = new ObservableCollection<Period>
         {
-            new Period { Name = "Terra", Months = 720 },
-            new Period{ Name="Purgatory", Months=80},
-            new Period{ Name="Hell", Months=2160},
-            new Period{ Name="Heaven", Months=1}
+            new Period {
+                Name = "Terra",
+                Months = 720,
+                CoursesList = new List<Course> {
+                    new Course { Name = "Ciencias" },
+                    new Course { Name="Expresiones del Espiritu Humanoide", IsLocked=false},
+                    new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true}
+                }
+            },
+            new Period {
+                Name = "Hell",
+                Months = 2451,
+                CoursesList = new List<Course> {
+                    new Course { Name="Lammas Infernales", IsApproved=true, IsLocked=false },
+                    new Course { Name="Torturación IV", IsLocked=true }
+                }
+            }
         };
         private bool isColumnsEven = false;
 

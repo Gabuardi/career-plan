@@ -34,11 +34,52 @@
                     <DataTemplate>
 
                         <!--<< PERIODS COLUMNS -->
-                        <StackLayout x:Name="periodColumn" x:DataType="Model:Period" WidthRequest="150" Padding="25" Spacing="45" VerticalOptions="FillAndExpand"
-                                    BackgroundColor="{Binding ., Source={x:Reference periodColumn}, Converter={StaticResource ColorAlternator}}">
-                         
-
+                        <StackLayout x:Name="PeriodColumn" x:DataType="Model:Period" WidthRequest="150" Padding="25" Spacing="45" VerticalOptions="FillAndExpand"
+                                    BackgroundColor="{Binding ., Source={x:Reference PeriodColumn}, Converter={StaticResource ColorAlternator}}"
+                                    BindableLayout.ItemsSource="{Binding CoursesList}">
                             <Label Text="{Binding Name}" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+
+                            <BindableLayout.ItemTemplate>
+                                <DataTemplate>
+
+                                    <!--<< COURSE BUTTON -->
+                                    <RelativeLayout x:DataType="Model:Course" VerticalOptions="Fill">
+                                        <!--<< BUTTON -->
+		                                <custom:MultiLineButton Text="{Binding Name}" HeightRequest="70" Padding="10, 0" CornerRadius="15" BorderWidth="2" TextColor="#8100B3" BorderColor="#8100B3"
+									        RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1}">
+                                            <custom:MultiLineButton.Triggers>
+                                                <DataTrigger TargetType="Button" Binding="{Binding IsApproved}" Value="true">
+                                                    <Setter Property="BackgroundColor" Value="#8100B3"></Setter>
+                                                    <Setter Property="TextColor" Value="#FFF"></Setter>
+                                                </DataTrigger>
+                                            </custom:MultiLineButton.Triggers>
+                                        </custom:MultiLineButton>
+
+                                        <!--<< APPROVED ICONS -->
+                                        <Image IsVisible="{Binding IsApproved}" RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-15}"
+                                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=-10}">
+                                            <Image.Source>
+                                                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf111;" Size="25" Color="#FFF"/>
+                                            </Image.Source>
+                                        </Image>
+                                        <Image IsVisible="{Binding IsApproved}" RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-15}"
+                                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=-10}">
+                                            <Image.Source>
+                                                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf058;" Size="25" Color="#A9D42C"/>
+                                            </Image.Source>
+                                        </Image>
+
+                                        <!--<< LOCKED ICON -->
+                                        <Image IsVisible="{Binding IsLocked}" RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=1, Constant=-15}"
+                                            RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Y, Factor=0, Constant=-13}">
+                                            <Image.Source>
+                                                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf023;" Size="25" Color="#FF9D00"/>
+                                            </Image.Source>
+                                        </Image>
+
+                                    </RelativeLayout>
+                                </DataTemplate>
+                            </BindableLayout.ItemTemplate>
                         </StackLayout>
 
                     </DataTemplate>
