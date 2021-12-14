@@ -7,7 +7,7 @@ namespace CareerPlan.Views
 {
     public partial class NewPlanPage : ContentPage
     {
-        private NewPlanMV viewModel;
+        private readonly NewPlanMV viewModel;
 
         public NewPlanPage()
         {
@@ -23,8 +23,7 @@ namespace CareerPlan.Views
 
         async void Next_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Console.WriteLine(JsonConvert.SerializeObject(viewModel.NewCareerPlan));
-            await Navigation.PushAsync(new ManagePeriodListPage());
+            await Navigation.PushAsync(new ManagePeriodListPage(viewModel.NewCareerPlan));
         }
      
     }

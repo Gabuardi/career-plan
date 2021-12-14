@@ -8,9 +8,9 @@ namespace CareerPlan.Views
     public partial class ManagePeriodListPage : ContentPage
     {
         ObservableCollection<Period> periods = new ObservableCollection<Period>();
-        private ManagePeriodListVM viewModel;
+        private readonly ManagePeriodListVM viewModel;
 
-        public ManagePeriodListPage()
+        public ManagePeriodListPage(Models.CareerPlan newCareerPlan)
         {
             InitializeComponent();
 
@@ -20,7 +20,7 @@ namespace CareerPlan.Views
             periods.Add(new Period { Name = "III Cuatrimeste" });
             periods.Add(new Period { Name = "IV Cuatrimeste" });
 
-            viewModel = new ManagePeriodListVM();
+            viewModel = new ManagePeriodListVM(newCareerPlan);
             BindingContext = viewModel;
         }
 
