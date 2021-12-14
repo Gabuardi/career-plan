@@ -11,7 +11,7 @@ namespace CareerPlan.ViewModels
             new Period {
                 Name = "Terra",
                 Months = 720,
-                CoursesList = new List<Course> {
+                CoursesList = new ObservableCollection<Course> {
                     new Course { Name = "Ciencias" },
                     new Course { Name="Expresiones del Espiritu Humanoide", IsLocked=false},
                     new Course { Name="Matematicas diabolicas", IsLocked=false, IsApproved=true},
@@ -25,7 +25,7 @@ namespace CareerPlan.ViewModels
             new Period {
                 Name = "Hell",
                 Months = 2451,
-                CoursesList = new List<Course> {
+                CoursesList = new ObservableCollection<Course> {
                     new Course { Name="Lammas Infernales", IsApproved=true, IsLocked=false },
                     new Course { Name="Torturación IV", IsLocked=true }
                 }
@@ -33,7 +33,7 @@ namespace CareerPlan.ViewModels
             new Period {
                 Name = "Heaven",
                 Months = 2451,
-                CoursesList = new List<Course> {
+                CoursesList = new ObservableCollection<Course> {
                     new Course { Name="Lammas Celestiales", IsLocked=true },
                     new Course { Name="Evalacion V", IsLocked=true }
                 }

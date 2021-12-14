@@ -1,4 +1,4 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections.ObjectModel;
 
 namespace CareerPlan.Models
 {
@@ -6,7 +6,6 @@ namespace CareerPlan.Models
     {
         public string Name { get; set; }
         public int Months { get; set; }
-        public List<Course> CoursesList { get; set; }
-
+        public ObservableCollection<Course> CoursesList { get; set; } = new ObservableCollection<Course>();
     }
 }

@@ -1,25 +1,18 @@
 ﻿using Xamarin.Forms;
-using System.Collections.ObjectModel;
 using CareerPlan.Models;
 using CareerPlan.views;
-using System;
-using Newtonsoft.Json;
 
 namespace CareerPlan.Views
 {
     public partial class NewPeriodPage : ContentPage
     {
-        ObservableCollection<Period> Studentperiods = new ObservableCollection<Period>();
+        private Period newPeriod = new Period();
 
         public NewPeriodPage()
         {
             InitializeComponent();
-            StudentPeriodList.ItemsSource = Studentperiods;
-            Studentperiods.Add(new Period { Name = "Fundamentos de Programación" });
-            Studentperiods.Add(new Period { Name = "Matemáticas Discretas" });
+            BindingContext = newPeriod;
         }
-
-        public ObservableCollection<Period> StudentPeriods { get { return Studentperiods; } }
 
         async void Add_Button_Clicked(System.Object sender, System.EventArgs e)
         {
@@ -33,8 +26,7 @@ namespace CareerPlan.Views
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            //Console.WriteLine(JsonConvert.SerializeObject(BindingContext));
-            AppStorage.TempCareerPlan.PeriodsList.Add(new Period { Name="XXXXX" });
+            AppStorage.TempCareerPlan.PeriodsList.Add(newPeriod);
             await Navigation.PopAsync();
         }
     }
