@@ -2,8 +2,12 @@
 {
     public class NewPlanMV
     {
-        public NewPlanMV()
+        private Models.CareerPlan newCareerPlan = new Models.CareerPlan();
+
+        public Models.CareerPlan NewCareerPlan
         {
+            get { return newCareerPlan; }
         }
+
     }
 }
