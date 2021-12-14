@@ -2,8 +2,10 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:Model="clr-namespace:CareerPlan.Models"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     x:Class="CareerPlan.Views.NewPeriodPage"
+    x:DataType="Model:Period"
     ios:Page.UseSafeArea="true"
     Title="Nuevo Periodo"
     BackgroundColor="#F7F7F7">
@@ -13,11 +15,11 @@
         <!--<< ENTRIES >>-->
         <StackLayout>
             <Label Text="Nombre" FontSize="18" FontAttributes="Bold"/>
-            <Entry/>
+            <Entry Text="{Binding Name}"/>
         </StackLayout>
         <StackLayout>
             <Label Text="Meses de Duración" FontSize="18" FontAttributes="Bold"/>
-            <Entry/>
+            <Entry Text="{Binding Months}"/>
         </StackLayout>
 
         <!--<< COURSES LIST >>-->
@@ -34,7 +36,7 @@
             </StackLayout>
 
             <!--<< LIST DATA >>-->
-            <ListView x:Name="StudentPeriodList" ItemsSource="{Binding StudentPeriods}" SelectionMode="None" BackgroundColor="Transparent">
+            <ListView ItemsSource="{Binding CoursesList}" SelectionMode="None" BackgroundColor="Transparent">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
