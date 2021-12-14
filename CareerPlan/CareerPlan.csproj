@@ -25,10 +25,16 @@
     <None Remove="Custom\" />
     <None Remove="sqlite-net-pcl" />
     <None Remove="Newtonsoft.Json" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\FontAwesome6Solid.otf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="View Models\" />
     <Folder Include="Custom\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontAwesome6Solid.otf" />
   </ItemGroup>
 </Project>
