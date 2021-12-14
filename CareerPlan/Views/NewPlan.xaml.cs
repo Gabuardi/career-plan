@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using CareerPlan.ViewModels;
+using Xamarin.Forms;
 
 namespace CareerPlan.Views
 {
@@ -7,6 +8,7 @@ namespace CareerPlan.Views
         public NewPlanPage()
         {
             InitializeComponent();
+            BindingContext = new NewPlanMV();
         }
 
         async void Cancel_Button_Clicked(System.Object sender, System.EventArgs e)
@@ -18,5 +20,6 @@ namespace CareerPlan.Views
         {
             await Navigation.PushAsync(new ManagePeriodListPage());
         }
+     
     }
 }
