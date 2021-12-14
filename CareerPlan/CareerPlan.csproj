@@ -37,4 +37,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Resources\FontAwesome6Solid.otf" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\CareerPlanBoard.xaml.cs">
+      <DependentUpon>CareerPlanBoard.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>
