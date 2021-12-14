@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using CareerPlan.ViewModels;
+using Xamarin.Forms;
 
 namespace CareerPlan.Views
 {
@@ -7,6 +8,7 @@ namespace CareerPlan.Views
         public CareerPlanBoard()
         {
             InitializeComponent();
+            BindingContext = new CareerPlanBoardVM();
         }
     }
 }
