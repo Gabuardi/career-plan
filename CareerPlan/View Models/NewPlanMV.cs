@@ -2,11 +2,11 @@
 {
     public class NewPlanMV
     {
-        private Models.CareerPlan newCareerPlan = new Models.CareerPlan();
+        private Models.CareerPlan careerPlan = new Models.CareerPlan();
 
-        public Models.CareerPlan NewCareerPlan
+        public Models.CareerPlan CareerPlan
         {
-            get { return newCareerPlan; }
+            get { return careerPlan; }
         }
 
     }

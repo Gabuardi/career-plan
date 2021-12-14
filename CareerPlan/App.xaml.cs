@@ -1,5 +1,6 @@
 ﻿using Xamarin.Forms;
 using CareerPlan.Views;
+using CareerPlan.ViewModels;
 
 namespace CareerPlan
 {
@@ -13,7 +14,7 @@ namespace CareerPlan
 
             InitializeComponent();
             MainPage = new NavigationPage(new ApplicationNexo());
-
+           
             //AppStorage.CareerPlan = new Models.CareerPlan
             //{
             //    Name = "Testing Career Plan",

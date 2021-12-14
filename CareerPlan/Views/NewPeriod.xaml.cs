@@ -2,6 +2,8 @@
 using System.Collections.ObjectModel;
 using CareerPlan.Models;
 using CareerPlan.views;
+using System;
+using Newtonsoft.Json;
 
 namespace CareerPlan.Views
 {
@@ -12,7 +14,6 @@ namespace CareerPlan.Views
         public NewPeriodPage()
         {
             InitializeComponent();
-
             StudentPeriodList.ItemsSource = Studentperiods;
             Studentperiods.Add(new Period { Name = "Fundamentos de Programación" });
             Studentperiods.Add(new Period { Name = "Matemáticas Discretas" });
@@ -32,6 +33,8 @@ namespace CareerPlan.Views
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
+            //Console.WriteLine(JsonConvert.SerializeObject(BindingContext));
+            AppStorage.TempCareerPlan.PeriodsList.Add(new Period { Name="XXXXX" });
             await Navigation.PopAsync();
         }
     }

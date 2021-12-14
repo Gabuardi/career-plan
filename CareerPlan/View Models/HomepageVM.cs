@@ -2,7 +2,7 @@
 {
     public class HomepageVM
     {
-        readonly private Models.CareerPlan currentCareerPlan = AppStorage.CareerPlan;
+        private readonly Models.CareerPlan currentCareerPlan = AppStorage.CareerPlan;
 
         public string CareerPlanName
         {
