@@ -1,12 +1,14 @@
 ﻿using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using CareerPlan.Models;
+using CareerPlan.ViewModels;
 
 namespace CareerPlan.Views
 {
     public partial class ManagePeriodListPage : ContentPage
     {
         ObservableCollection<Period> periods = new ObservableCollection<Period>();
+        private ManagePeriodListVM viewModel;
 
         public ManagePeriodListPage()
         {
@@ -18,6 +20,8 @@ namespace CareerPlan.Views
             periods.Add(new Period { Name = "III Cuatrimeste" });
             periods.Add(new Period { Name = "IV Cuatrimeste" });
 
+            viewModel = new ManagePeriodListVM();
+            BindingContext = viewModel;
         }
 
         public ObservableCollection<Period> Periods { get { return periods; } }
