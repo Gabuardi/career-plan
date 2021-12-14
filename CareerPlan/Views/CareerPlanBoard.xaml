@@ -3,6 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:custom="clr-namespace:CareerPlan.Custom"
     x:Class="CareerPlan.Views.CareerPlanBoard"
     ios:Page.UseSafeArea="true"
     NavigationPage.HasNavigationBar="False"
@@ -17,9 +18,10 @@
             <StackLayout Orientation="Horizontal" Spacing="0" VerticalOptions="FillAndExpand">
                 <StackLayout WidthRequest="150" Padding="25" Spacing="45" VerticalOptions="FillAndExpand" BackgroundColor="#ebebeb">
                     <Label Text="I Cuatrimestre" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
-                    <Button Text="dsaddsadsasdasadas dsasad" Padding="10, 20" CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3">
+                    <Button Text="dsaddsadsasdasadas dsasad" HeightRequest="70" Padding="10, 0" CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3">
                     </Button>
-                     <Button Text="dsadsad" Padding="10, 20" CornerRadius="15" BorderWidth="2" BorderColor="#8100B3" TextColor="#8100B3"></Button>
+                     <Button Text="dsadsad" Padding="10, 30" CornerRadius="15" BorderWidth="2" BorderColor="#8100B3" TextColor="#8100B3"></Button>
+                    <custom:MultiLineButton Text="seminario de investigación: Costa Rica y el mundo" HeightRequest="70" Padding="10, 0" HorizontalOptions="Center" VerticalOptions="Fill" CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3"/>
                 </StackLayout>
                 <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#FFF"></StackLayout>
                 <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#ebebeb">
