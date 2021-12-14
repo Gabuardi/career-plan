@@ -15,11 +15,14 @@ namespace CareerPlan.views
             new Course { Name="Inglés IV" },
             new Course { Name="Matemáticas Discretas" },
             new Course { Name="Xamarin"}
-        }; 
+        };
+
+        private Course newCourse = new Course();
 
         public NewCoursePage()
         {
             InitializeComponent();
+            BindingContext = newCourse;
 
             PeriodsList.ItemsSource = periods;
             periods.Add(new Course { Name="I Cuatrimeste" });
