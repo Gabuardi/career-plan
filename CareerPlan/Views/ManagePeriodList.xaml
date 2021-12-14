@@ -2,35 +2,51 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     x:Class="CareerPlan.Views.ManagePeriodList"
+    ios:Page.UseSafeArea="true"
     Title="Periodos del Plan de Estudio"
     BackgroundColor="#F7F7F7">
 
+    <StackLayout Spacing="0">
 
-        <StackLayout Spacing="0">
-            <Button Text="AÑADIR PERIODO" Margin="15,15,15,0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"></Button>
-            <ListView x:Name="PeriodsList" ItemsSource="{Binding Periods}" BackgroundColor="Transparent">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                      <ViewCell>
-                         <ViewCell.ContextActions>
+        <!--<< LIST BUTTON >>-->
+        <Button Text="AÑADIR PERIODO" Margin="15,15,15,0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf067;" Size="21" Color="#FFF" />
+            </Button.ImageSource>
+        </Button>
+
+        <!--<< PERIODS LIST >>-->
+        <ListView x:Name="PeriodsList" ItemsSource="{Binding Periods}" BackgroundColor="Transparent">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <ViewCell.ContextActions>
                             <MenuItem Text="Editar" />
                             <MenuItem Text="Eliminar" IsDestructive="True" />
-                         </ViewCell.ContextActions>
-                         <StackLayout Padding="15,0" VerticalOptions="Center">
-                              <Label Text="{Binding Name}" />
-                         </StackLayout>
-                      </ViewCell>
-                    </DataTemplate>
-                  </ListView.ItemTemplate>
-            </ListView>
+                        </ViewCell.ContextActions>
+                        <StackLayout Padding="15,0" VerticalOptions="Center">
+                            <Label Text="{Binding Name}" />
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
 
-            <!--<< Wizard Buttons >>-->
-            <StackLayout Margin="0, 20" VerticalOptions="Center" HorizontalOptions="Center" Orientation="Horizontal">
-                <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
-                <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
-            </StackLayout>
-          
-
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Margin="0, 20" HorizontalOptions="Center" Orientation="Horizontal">
+            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf057;" Size="23" Color="#FFF"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="LISTO" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf058;" Size="23" Color="#FFF"/>
+                </Button.ImageSource>
+            </Button>
         </StackLayout>
+          
+    </StackLayout>
 </ContentPage>

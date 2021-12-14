@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="CareerPlan.Views.NoPlanPage"
-             NavigationPage.HasNavigationBar="False">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CareerPlan.Views.NoPlanPage"
+    NavigationPage.HasNavigationBar="False">
     <ContentPage.Background>
         <LinearGradientBrush EndPoint="0,1">
             <GradientStop Color="#8100B3" Offset="0.0" />
@@ -12,14 +13,27 @@
     </ContentPage.Background>
 
     <StackLayout VerticalOptions="CenterAndExpand" Padding="20" Spacing="50">
+
+        <!--<< ICON >>-->
+        <Image>
+            <Image.Source>
+                <FontImageSource FontFamily="FA6Solid" Glyph="&#xF49E;" Size="120" Color="#FFF"/>
+            </Image.Source>
+        </Image>
+
+        <!--<< MESSAGE >>-->
         <Label HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" TextColor="White">
                 Parece que no tienes ningún plan de carrera en este dispositivo
         </Label>
 
+        <!--<< BUTTON >>-->
         <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
             <Button.Text>
                 CREAR NUEVO PLAN DE CARRERA
             </Button.Text>
+            <Button.ImageSource>
+                <FontImageSource FontFamily="FA6Solid" Glyph="&#xf067;" Size="25" Color="#FFF" />
+            </Button.ImageSource>
         </Button>
                                     
     </StackLayout>
