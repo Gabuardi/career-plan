@@ -27,12 +27,14 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="Resources\" />
     <None Remove="Resources\FontAwesome6Solid.otf" />
+    <None Remove="Converter\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
     <Folder Include="View Models\" />
     <Folder Include="Custom\" />
     <Folder Include="Resources\" />
+    <Folder Include="Converter\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\FontAwesome6Solid.otf" />
