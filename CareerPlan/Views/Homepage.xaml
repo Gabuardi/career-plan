@@ -40,12 +40,14 @@
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
+            <Button Text="NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"
+                    Clicked="New_Plan_Button_Clicked">
                 <Button.ImageSource>
                     <FontImageSource FontFamily="FA6Solid" Glyph="&#xf067;" Size="21" Color="#FFF" />
                 </Button.ImageSource>
             </Button>
-            <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
+            <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"
+                    Clicked="View_Courses_Button_Clicked"/>
         </StackLayout>
 
     </StackLayout>

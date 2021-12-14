@@ -88,13 +88,9 @@
         </StackLayout>
 
         <!--<< ACTION BUTTONS >>-->
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28">
-                <Button.ImageSource>
-                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf057;" Size="23" Color="#FFF"/>
-                </Button.ImageSource>
-            </Button>
-            <Button Text="LISTO" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28">
+        <StackLayout Orientation="Horizontal" Margin="35, 20" VerticalOptions="EndAndExpand">
+            <Button Text="LISTO" Padding="20, 0" HorizontalOptions="FillAndExpand" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"
+                    Clicked="Done_Button_Clicked">
                 <Button.ImageSource>
                     <FontImageSource FontFamily="FA6Solid" Glyph="&#xf058;" Size="23" Color="#FFF"/>
                 </Button.ImageSource>

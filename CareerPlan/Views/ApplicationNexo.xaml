@@ -9,23 +9,12 @@
             <Label Text="CREATE NEW CAREER PLAN FLOW" Margin="0, 15" FontAttributes="Bold"/>
             <Button Clicked="GoToNoPlanPage"
                     Text="No Plan Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToNewPlanPage"
-                    Text="New Plan Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToManagePeriodListPage"
-                    Text="Manage Period List Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToStudentPeriod"
-                    Text="Student Period Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToNewCoursePage"
-                    Text="New Course Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToCareerPlanSummary"
-                    Text="Career Plan Summary" BorderWidth="2" BorderColor="#000"/>
         </StackLayout>
 
          <StackLayout Padding="15, 0">
             <Label Text="CAREER PLAN TRACKING FLOW" Margin="0, 15" FontAttributes="Bold"/>
             <Button Clicked="GoToHomepage"
                     Text="Homepage" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToCareerPlanBoard" Text="Career Plan Board" BorderWidth="2" BorderColor="#000"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>

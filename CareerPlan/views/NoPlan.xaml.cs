@@ -8,6 +8,10 @@ namespace CareerPlan.Views
         {
             InitializeComponent();
         }
-       
+
+        async void Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new NewPlanPage());
+        }
     }
 }

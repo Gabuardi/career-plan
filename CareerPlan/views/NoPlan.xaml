@@ -27,7 +27,8 @@
         </Label>
 
         <!--<< BUTTON >>-->
-        <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
+        <Button HorizontalOptions="Center" Padding="20, 10" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C"
+                Clicked="Button_Clicked">
             <Button.Text>
                 CREAR NUEVO PLAN DE CARRERA
             </Button.Text>
