@@ -2,6 +2,32 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     x:Class="CareerPlan.Views.CareerPlanBoard"
-    NavigationPage.HasNavigationBar="False">
+    ios:Page.UseSafeArea="true"
+    NavigationPage.HasNavigationBar="False"
+    BackgroundColor="#6C0096">
+
+    <StackLayout VerticalOptions="FillAndExpand" Spacing="0">
+        <StackLayout Padding="15">
+            <Label FontSize="22" FontAttributes="Bold" TextColor="#FFF">Liecenciatura Ingeniería Biomédica</Label>
+        </StackLayout>
+
+        <ScrollView VerticalOptions="FillAndExpand" Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" Spacing="0" VerticalOptions="FillAndExpand">
+                <StackLayout WidthRequest="150" Padding="25" Spacing="45" VerticalOptions="FillAndExpand" BackgroundColor="#ebebeb">
+                    <Button Text="dsaddsadsasdasadas dsasad" Padding="10, 20" CornerRadius="15" TextColor="#FFF" BackgroundColor="#8100B3">
+                    </Button>
+                     <Button Text="dsadsad" Padding="10, 20" CornerRadius="15" BorderWidth="2" BorderColor="#8100B3" TextColor="#8100B3"></Button>
+                </StackLayout>
+                <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#FFF"></StackLayout>
+                <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#ebebeb">
+                </StackLayout>
+                <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#FFF"></StackLayout>
+                <StackLayout WidthRequest="200" VerticalOptions="FillAndExpand" BackgroundColor="#ebebeb">
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
+
 </ContentPage>
