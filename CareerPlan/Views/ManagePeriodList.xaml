@@ -3,7 +3,10 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:ViewModel="clr-namespace:CareerPlan.ViewModels"
+    xmlns:Model="clr-namespace:CareerPlan.Models"
     x:Class="CareerPlan.Views.ManagePeriodListPage"
+    x:DataType="ViewModel:ManagePeriodListVM"
     ios:Page.UseSafeArea="true"
     Title="Periodos del Plan de Estudio"
     BackgroundColor="#F7F7F7">
@@ -19,7 +22,7 @@
         </Button>
 
         <!--<< PERIODS LIST >>-->
-        <ListView x:Name="PeriodsList" ItemsSource="{Binding Periods}" BackgroundColor="Transparent">
+        <ListView ItemsSource="{Binding NewCareerPlan.PeriodsList}" BackgroundColor="Transparent">
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <ViewCell>
@@ -27,7 +30,7 @@
                             <MenuItem Text="Editar" Clicked="Edit_Course_Clicked"/>
                             <MenuItem Text="Eliminar" IsDestructive="True" />
                         </ViewCell.ContextActions>
-                        <StackLayout Padding="15,0" VerticalOptions="Center">
+                        <StackLayout x:DataType="Model:Period" Padding="15,0" VerticalOptions="Center">
                             <Label Text="{Binding Name}" />
                         </StackLayout>
                     </ViewCell>
