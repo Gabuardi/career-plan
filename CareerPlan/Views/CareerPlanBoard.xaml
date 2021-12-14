@@ -6,7 +6,7 @@
     x:Class="CareerPlan.Views.CareerPlanBoard"
     ios:Page.UseSafeArea="true"
     NavigationPage.HasNavigationBar="False"
-    BackgroundColor="#6C0096">
+    BackgroundColor="#530073">
 
     <StackLayout VerticalOptions="FillAndExpand" Spacing="0">
         <StackLayout Padding="15">
