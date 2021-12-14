@@ -34,7 +34,7 @@ namespace CareerPlan.Views
 
         void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Navigation.PopAsync();
+            Navigation.PushAsync(new CareerPlanSummaryPage());
         }
        
     }

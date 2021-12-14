@@ -36,7 +36,7 @@
         </ListView>
 
         <!--<< ACTION BUTTONS >>-->
-        <StackLayout Margin="20" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
+        <StackLayout Margin="35, 20" HorizontalOptions="FillAndExpand" Orientation="Horizontal">
             <Button Text="LISTO" Padding="20, 0" HorizontalOptions="FillAndExpand" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"
                     Clicked="Done_Button_Clicked">
                 <Button.ImageSource>
