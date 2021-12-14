@@ -3,7 +3,7 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     x:Class="CareerPlan.Views.NewPeriodPage"
-    Title="Añadir Periodo Estudiantil"
+    Title="Nuevo Periodo"
     BackgroundColor="#F7F7F7">
   
     <StackLayout Padding="15" Spacing="25">
@@ -47,7 +47,7 @@
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="Center" >
             <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
-            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
+            <Button Text="LISTO" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
         </StackLayout>
 
     </StackLayout>
