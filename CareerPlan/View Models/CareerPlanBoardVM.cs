@@ -39,22 +39,14 @@ namespace CareerPlan.ViewModels
                 }
             }
         };
-        private bool isColumnsEven = false;
 
         public ObservableCollection<Period> PeriodsList
         {
             get { return periodsList; }
         }
 
-        public bool IsColumnsEven
-        {
-            get
-            {
-                bool currentValue = isColumnsEven;
-                isColumnsEven = !currentValue;
-                return currentValue;
-            }
-        }
+        public string Title
+        { get { return "Ingeniería Biotecnologíca Cuantica Australiana Con Especialidad En Canguros"; } }
 
     }
 }

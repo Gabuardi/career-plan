@@ -10,9 +10,8 @@
     x:Class="CareerPlan.Views.CareerPlanBoard"
     x:DataType="ViewModel:CareerPlanBoardVM"
     ios:Page.UseSafeArea="true"
-    NavigationPage.HasNavigationBar="False"
-    BackgroundColor="#530073"
-    x:Name="xPage">
+    BackgroundColor="#EBEBEB"
+    Title="{Binding Title}">
 
     <ContentPage.Resources>
         <ResourceDictionary>
@@ -22,10 +21,7 @@
 
     <StackLayout VerticalOptions="FillAndExpand" Spacing="0">
 
-        <!--<< HEADER >>-->
-        <StackLayout Padding="15">
-            <Label FontSize="22" FontAttributes="Bold" TextColor="#FFF">Liecenciatura Ingeniería Biomédica</Label>
-        </StackLayout>
+      
 
         <!--<< BOARD AREA >>-->
         <ScrollView VerticalOptions="FillAndExpand" Orientation="Both">
