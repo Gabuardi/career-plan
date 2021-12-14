@@ -11,17 +11,17 @@
     NavigationPage.HasNavigationBar="False"
     BackgroundColor="#F7F7F7">
 
-    <StackLayout HorizontalOptions="Fill" Padding="15, 25, 15, 15" Spacing="40">
+    <StackLayout HorizontalOptions="Fill" Padding="15, 25, 15, 15" Spacing="55">
 
         <!--<< TITLE >>-->
-        <Label Text="{Binding CareerPlanName}" HorizontalTextAlignment="Center" FontSize="25" FontAttributes="Bold" />
+        <Label Text="{Binding CareerPlanName}" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" />
 
         <!--<< CIRCLE PROGRESS BAR >>-->
         <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="{Binding CareerPlanProgress}" HeightRequest="200" TrackInnerRadius="0.85"
                                            TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3">
             <progressBar:SfCircularProgressBar.Content>
                  <StackLayout>
-                    <Label Text="{Binding Path=CareerPlanProgress, StringFormat='{0}%'}" FontSize="30" TextColor="#8100B3"></Label>
+                    <Label Text="{Binding Path=CareerPlanProgress, StringFormat='{0}%'}" FontSize="40" TextColor="#8100B3"></Label>
                  </StackLayout>
             </progressBar:SfCircularProgressBar.Content>
         </progressBar:SfCircularProgressBar>
@@ -29,19 +29,23 @@
         <!--<< FEATURE POINTS >>-->
         <Grid>
             <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand">
-                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Cursos Restantes</Label>
-                <Label Text="{Binding Path=RemainingCourses, StringFormat='{0} Cursos'}" HorizontalTextAlignment="Center" />
+                <Label HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold">Cursos Restantes</Label>
+                <Label Text="{Binding Path=RemainingCourses, StringFormat='{0} Cursos'}" HorizontalTextAlignment="Center" FontSize="20"/>
             </StackLayout>
             <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
-                <Label HorizontalTextAlignment="Center" FontAttributes="Bold">Tiempo Estimado</Label>
-                <Label Text="{Binding Path=RemainingMonths, StringFormat='{0} Meses'}" HorizontalTextAlignment="Center" />
+                <Label HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold">Tiempo Estimado</Label>
+                <Label Text="{Binding Path=RemainingMonths, StringFormat='{0} Meses'}" HorizontalTextAlignment="Center" FontSize="20"/>
             </StackLayout>
         </Grid>
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal"  HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="CREAR NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
-            <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C" />
+            <Button Text="NUEVO PLAN" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#A9D42C">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf067;" Size="21" Color="#FFF" />
+                </Button.ImageSource>
+            </Button>
+            <Button Text="VER CURSOS" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
         </StackLayout>
 
     </StackLayout>
