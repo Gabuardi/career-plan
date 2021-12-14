@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-             xmlns:custom="clr-namespace:CareerPlan.Custom"
-             x:Class="CareerPlan.Views.NewPlanPage"
-             ios:Page.UseSafeArea="true"
-             Title="Nuevo Plan de Carrera"
-             BackgroundColor="#F7F7F7">
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:custom="clr-namespace:CareerPlan.Custom"
+    x:Class="CareerPlan.Views.NewPlanPage"
+    ios:Page.UseSafeArea="true"
+    Title="Nuevo Plan de Carrera"
+    BackgroundColor="#F7F7F7">
+
     <StackLayout Padding="15" Spacing="20">
 
         <!--<< ENTRIES >>-->
@@ -29,8 +31,16 @@
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
-            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28" />
+            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf057;" Size="23" Color="#FFF"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="SIGUIENTE" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf138;" Size="23" Color="#FFF"/>
+                </Button.ImageSource>
+            </Button>
         </StackLayout>
 
     </StackLayout>
