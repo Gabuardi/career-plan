@@ -10,5 +10,15 @@ namespace CareerPlan.Views
             InitializeComponent();
             BindingContext = new HomepageVM();
         }
+
+        async void New_Plan_Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new NewPlanPage());
+        }
+
+        async void View_Courses_Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new CareerPlanBoard());
+        }
     }
 }

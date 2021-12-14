@@ -15,7 +15,6 @@
             <Label Text="CAREER PLAN TRACKING FLOW" Margin="0, 15" FontAttributes="Bold"/>
             <Button Clicked="GoToHomepage"
                     Text="Homepage" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToCareerPlanBoard" Text="Career Plan Board" BorderWidth="2" BorderColor="#000"/>
         </StackLayout>
     </StackLayout>
 </ContentPage>
