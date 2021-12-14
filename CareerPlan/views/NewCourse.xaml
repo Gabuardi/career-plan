@@ -13,7 +13,7 @@
         <!--<< TEXT ENTRIES >>-->
         <StackLayout Padding="15, 0">
             <Label Text="Nombre del Curso" FontSize="18" FontAttributes="Bold"/>
-            <Entry/>
+            <Entry MaxLength="45"/>
         </StackLayout>
         <StackLayout Padding="15, 0">
             <Label Text="Profesor" FontSize="18" FontAttributes="Bold"/>

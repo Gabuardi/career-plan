@@ -45,5 +45,10 @@ namespace CareerPlan.Views
         {
             Navigation.PushAsync(new Homepage());
         }
+
+        void GoToCareerPlanBoard(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new CareerPlanBoard());
+        }
     }
 }
