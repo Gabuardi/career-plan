@@ -89,8 +89,16 @@
 
         <!--<< ACTION BUTTONS >>-->
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="EndAndExpand">
-            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
-            <Button Text="ACEPTAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28"/>
+            <Button Text="CANCELAR" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf057;" Size="23" Color="#FFF"/>
+                </Button.ImageSource>
+            </Button>
+            <Button Text="LISTO" Padding="20, 0" FontAttributes="Bold" TextColor="#FFF" BackgroundColor="#FA7F28">
+                <Button.ImageSource>
+                    <FontImageSource FontFamily="FA6Solid" Glyph="&#xf058;" Size="23" Color="#FFF"/>
+                </Button.ImageSource>
+            </Button>
         </StackLayout>
 
     </StackLayout>
