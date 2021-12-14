@@ -1,17 +1,16 @@
-﻿using Xamarin.Forms;
-using CareerPlan.ViewModels;
+﻿using System.Collections.ObjectModel;
+using CareerPlan.Models;
+using Xamarin.Forms;
 
 namespace CareerPlan.Views
 {
     public partial class ManagePeriodListPage : ContentPage
     {
-        private readonly ManagePeriodListVM viewModel;
 
-        public ManagePeriodListPage(Models.CareerPlan newCareerPlan)
+        public ManagePeriodListPage()
         {
             InitializeComponent();
-            viewModel = new ManagePeriodListVM(newCareerPlan);
-            BindingContext = viewModel;
+            BindingContext = AppStorage.TempCareerPlan;
         }
 
         async void Add_Button_Clicked(System.Object sender, System.EventArgs e)
@@ -26,7 +25,7 @@ namespace CareerPlan.Views
 
         void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            Application.Current.MainPage = new NavigationPage(new CareerPlanSummaryPage());
+            App.Current.MainPage = new NavigationPage(new CareerPlanSummaryPage());
         }
        
     }

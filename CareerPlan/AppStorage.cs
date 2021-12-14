@@ -6,6 +6,7 @@ namespace CareerPlan
     public static class AppStorage
     {
         readonly private static string careerPlanPreferenceName = "StoredCareerPlan";
+        readonly private static Models.CareerPlan tempCareerPlan = new Models.CareerPlan();
 
         public static Models.CareerPlan CareerPlan
         {
@@ -20,11 +21,16 @@ namespace CareerPlan
                 Models.CareerPlan storedCareerPlan = JsonConvert.DeserializeObject<Models.CareerPlan>(serializedValue);
                 return storedCareerPlan ?? new Models.CareerPlan();
             }
-        } 
+        }
 
         public static bool hasCareerPlanStored()
         {
             return Preferences.ContainsKey(careerPlanPreferenceName);
+        }
+
+        public static Models.CareerPlan TempCareerPlan
+        {
+            get { return tempCareerPlan; }
         }
 
     }
