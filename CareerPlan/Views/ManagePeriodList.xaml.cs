@@ -4,11 +4,11 @@ using CareerPlan.Models;
 
 namespace CareerPlan.Views
 {
-    public partial class ManagePeriodList : ContentPage
+    public partial class ManagePeriodListPage : ContentPage
     {
         ObservableCollection<Period> periods = new ObservableCollection<Period>();
 
-        public ManagePeriodList()
+        public ManagePeriodListPage()
         {
             InitializeComponent();
 
@@ -22,5 +22,20 @@ namespace CareerPlan.Views
 
         public ObservableCollection<Period> Periods { get { return periods; } }
 
+        void Add_Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new NewPeriodPage());
+        }
+
+        void Edit_Course_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushAsync(new NewPeriodPage());
+        }
+
+        void Done_Button_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PopAsync();
+        }
+       
     }
 }

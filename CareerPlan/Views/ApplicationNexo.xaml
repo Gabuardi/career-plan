@@ -9,8 +9,6 @@
             <Label Text="CREATE NEW CAREER PLAN FLOW" Margin="0, 15" FontAttributes="Bold"/>
             <Button Clicked="GoToNoPlanPage"
                     Text="No Plan Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToManagePeriodListPage"
-                    Text="Manage Period List Page" BorderWidth="2" BorderColor="#000"/>
             <Button Clicked="GoToStudentPeriod"
                     Text="Student Period Page" BorderWidth="2" BorderColor="#000"/>
             <Button Clicked="GoToNewCoursePage"
