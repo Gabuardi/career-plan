@@ -9,8 +9,6 @@
             <Label Text="CREATE NEW CAREER PLAN FLOW" Margin="0, 15" FontAttributes="Bold"/>
             <Button Clicked="GoToNoPlanPage"
                     Text="No Plan Page" BorderWidth="2" BorderColor="#000"/>
-            <Button Clicked="GoToCareerPlanSummary"
-                    Text="Career Plan Summary" BorderWidth="2" BorderColor="#000"/>
         </StackLayout>
 
          <StackLayout Padding="15, 0">
