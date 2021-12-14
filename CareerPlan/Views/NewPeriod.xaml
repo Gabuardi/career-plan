@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="CareerPlan.Views.NewPeriodPage"
+    Title="Nuevo Periodo"
+    BackgroundColor="#F7F7F7">
+  
+    <StackLayout Padding="15" Spacing="25">
+
+        <!--<< ENTRIES >>-->
+        <StackLayout>
+            <Label Text="Nombre" FontSize="18" FontAttributes="Bold"/>
+            <Entry/>
+        </StackLayout>
+        <StackLayout>
+            <Label Text="Meses de Duración" FontSize="18" FontAttributes="Bold"/>
+            <Entry/>
+        </StackLayout>
+
+        <!--<< COURSES LIST >>-->
+        <StackLayout Spacing="0">
+            <!--<< LIST CONTROLS >>-->
+            <StackLayout Orientation="Horizontal" VerticalOptions="Fill">
+                <Label Text="Cursos" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                <Button Text="+ AÑADIR" Padding="20, 0" HorizontalOptions="EndAndExpand" FontAttributes="Bold" TextColor="#FFF"  BackgroundColor="#A9D42C"/>
+            </StackLayout>
+
+            <!--<< LIST DATA >>-->
+            <ListView x:Name="StudentPeriodList" ItemsSource="{Binding StudentPeriods}" SelectionMode="None" BackgroundColor="Transparent">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <ViewCell.ContextActions>
+                                <MenuItem Text="Editar" />
+                                <MenuItem Text="Eliminar" IsDestructive="True" />
+                            </ViewCell.ContextActions>
+                            <StackLayout Padding="15,0" VerticalOptions="Center">
+                                <Label Text="{Binding Name}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+
+        <!--<< ACTION BUTTONS >>-->
+        <StackLayout Orientation="Horizontal" VerticalOptions="EndAndExpand" HorizontalOptions="Center" >
+            <Button Text="CANCELAR" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
+            <Button Text="LISTO" Padding="20, 0" TextColor="#FFF" FontAttributes="Bold" BackgroundColor="#FA7F28"/>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>
