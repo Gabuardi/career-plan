@@ -8,7 +8,7 @@ namespace CareerPlan.Views
         public Homepage()
         {
             InitializeComponent();
-            BindingContext = new HomepageVM();
+            BindingContext = AppStorage.CareerPlan;
         }
 
         async void New_Plan_Button_Clicked(System.Object sender, System.EventArgs e)

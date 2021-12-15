@@ -10,28 +10,24 @@ namespace CareerPlan.views
 {
     public partial class NewCoursePage : ContentPage
     {
-        readonly ObservableCollection<Course> periods = new ObservableCollection<Course>();
-
-        readonly ObservableCollection<Course> searchSource = new ObservableCollection<Course>
-        {
-            new Course { Name="Inglés IV" },
-            new Course { Name="Matemáticas Discretas" },
-            new Course { Name="Xamarin"}
-        };
-
+        private readonly ObservableCollection<Course> searchSource = new ObservableCollection<Course>();
         private Course newCourse = new Course();
 
         public NewCoursePage()
         {
             InitializeComponent();
             BindingContext = newCourse;
-
-            PeriodsList.ItemsSource = periods;
-            periods.Add(new Course { Name="I Cuatrimeste" });
-            periods.Add(new Course { Name = "II Cuatrimeste" });
-            periods.Add(new Course { Name = "III Cuatrimeste" });
-            periods.Add(new Course { Name = "IV Cuatrimeste" });
+            FillSearchSource();
             SearchResultsListView.ItemsSource = searchSource;
+        }
+
+        private void FillSearchSource()
+        {
+            ObservableCollection<Period> currentPeriodList = AppStorage.TempCareerPlan.PeriodsList;
+            foreach (Period period in currentPeriodList)
+            {
+                foreach (Course course in period.CoursesList) searchSource.Add(course);
+            }
         }
 
         List<Course> SearchCourse(String searchQuery)
@@ -49,7 +45,6 @@ namespace CareerPlan.views
 
         void SearchBar_Focused(System.Object sender, Xamarin.Forms.FocusEventArgs e)
         {
-            
             PeriodsList.IsVisible = false;
             SearchResultsPanel.IsVisible = true;
         }
@@ -70,7 +65,7 @@ namespace CareerPlan.views
         {
             Course selectedCourse = (Course)e.Item;
             searchSource.Remove(selectedCourse);
-            periods.Add(selectedCourse);
+            newCourse.RequiredCourses.Add(selectedCourse);
         }
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)

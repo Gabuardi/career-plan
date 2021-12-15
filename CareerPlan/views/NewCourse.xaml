@@ -53,7 +53,7 @@
             </StackLayout>
 
             <!--<< LIST DATA >>-->
-            <ListView x:Name="PeriodsList" SelectionMode="None" BackgroundColor="Transparent" IsVisible="true">
+            <ListView x:Name="PeriodsList" ItemsSource="{Binding RequiredCourses}" SelectionMode="None" BackgroundColor="Transparent" IsVisible="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

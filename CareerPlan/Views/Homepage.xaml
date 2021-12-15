@@ -4,9 +4,9 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
     xmlns:progressBar="clr-namespace:Syncfusion.XForms.ProgressBar;assembly=Syncfusion.SfProgressBar.XForms"
-    xmlns:ViewModel="clr-namespace:CareerPlan.ViewModels"
+    xmlns:Model="clr-namespace:CareerPlan.Models"
     x:Class="CareerPlan.Views.Homepage"
-    x:DataType="ViewModel:HomepageVM"
+    x:DataType="Model:CareerPlan"
     ios:Page.UseSafeArea="true"
     NavigationPage.HasNavigationBar="False"
     BackgroundColor="#F7F7F7">
@@ -14,14 +14,14 @@
     <StackLayout HorizontalOptions="Fill" Padding="15, 25, 15, 15" Spacing="55">
 
         <!--<< TITLE >>-->
-        <Label Text="{Binding CareerPlanName}" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" />
+        <Label Text="{Binding Name}" HorizontalTextAlignment="Center" FontSize="28" FontAttributes="Bold" />
 
         <!--<< CIRCLE PROGRESS BAR >>-->
-        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="{Binding CareerPlanProgress}" HeightRequest="200" TrackInnerRadius="0.85"
+        <progressBar:SfCircularProgressBar HorizontalOptions="FillAndExpand" Progress="{Binding Progress}" HeightRequest="200" TrackInnerRadius="0.85"
                                            TrackOuterRadius="1" IndicatorInnerRadius="0.85" IndicatorOuterRadius="1" TrackColor="#d6d6d6" ProgressColor="#8100B3">
             <progressBar:SfCircularProgressBar.Content>
                  <StackLayout>
-                    <Label Text="{Binding Path=CareerPlanProgress, StringFormat='{0}%'}" FontSize="40" TextColor="#8100B3"></Label>
+                    <Label Text="{Binding Path=Progress, StringFormat='{0}%'}" FontSize="40" TextColor="#8100B3"></Label>
                  </StackLayout>
             </progressBar:SfCircularProgressBar.Content>
         </progressBar:SfCircularProgressBar>
@@ -30,11 +30,11 @@
         <Grid>
             <StackLayout Grid.Column="0" HorizontalOptions="FillAndExpand">
                 <Label HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold">Cursos Restantes</Label>
-                <Label Text="{Binding Path=RemainingCourses, StringFormat='{0} Cursos'}" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label Text="{Binding RemainingCourses, StringFormat='{0} Cursos'}" HorizontalTextAlignment="Center" FontSize="20"/>
             </StackLayout>
             <StackLayout Grid.Column="1" HorizontalOptions="FillAndExpand">
                 <Label HorizontalTextAlignment="Center" FontSize="20" FontAttributes="Bold">Tiempo Estimado</Label>
-                <Label Text="{Binding Path=RemainingMonths, StringFormat='{0} Meses'}" HorizontalTextAlignment="Center" FontSize="20"/>
+                <Label Text="{Binding RemainingMonths, StringFormat='{0} Meses'}" HorizontalTextAlignment="Center" FontSize="20"/>
             </StackLayout>
         </Grid>
 

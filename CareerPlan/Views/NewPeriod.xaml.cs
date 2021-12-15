@@ -26,7 +26,15 @@ namespace CareerPlan.Views
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            AppStorage.TempCareerPlan.PeriodsList.Add(AppStorage.TempPeriod);
+            Period newPeriod = AppStorage.TempPeriod;
+            AppStorage.TempCareerPlan.RemainingMonths += newPeriod.Months;
+            foreach (Course course in newPeriod.CoursesList)
+            {
+                AppStorage.TempCareerPlan.RemainingCourses += 1;
+                AppStorage.TempCareerPlan.TotalPrice += course.Price;
+                AppStorage.TempCareerPlan.TotalCredits += course.Credits;
+            }
+            AppStorage.TempCareerPlan.PeriodsList.Add(newPeriod);
             await Navigation.PopAsync();
         }
     }
