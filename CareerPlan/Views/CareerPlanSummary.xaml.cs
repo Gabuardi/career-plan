@@ -18,7 +18,7 @@ namespace CareerPlan.Views
         async void View_Button_Clicked(System.Object sender, System.EventArgs e)
         {
             AppStorage.CareerPlan = AppStorage.TempCareerPlan;
-            await Navigation.PushAsync(new CareerPlanBoard());
+            await Navigation.PushAsync(new CareerPlanBoard(AppStorage.CareerPlan));
         }
     }
 }

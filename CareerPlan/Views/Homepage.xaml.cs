@@ -1,5 +1,4 @@
-﻿using CareerPlan.ViewModels;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CareerPlan.Views
 {
@@ -18,7 +17,7 @@ namespace CareerPlan.Views
 
         async void View_Courses_Button_Clicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new CareerPlanBoard());
+            await Navigation.PushAsync(new CareerPlanBoard(AppStorage.CareerPlan));
         }
     }
 }
