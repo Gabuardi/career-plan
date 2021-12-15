@@ -1,14 +1,13 @@
-﻿using CareerPlan.ViewModels;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CareerPlan.Views
 {
     public partial class CareerPlanBoard : ContentPage
     {
-        public CareerPlanBoard()
+        public CareerPlanBoard(Models.CareerPlan careerPlan)
         {
             InitializeComponent();
-            BindingContext = new CareerPlanBoardVM();
+            BindingContext = careerPlan;
         }
     }
 }

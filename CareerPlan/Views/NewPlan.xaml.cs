@@ -19,6 +19,7 @@ namespace CareerPlan.Views
 
         async void Next_Button_Clicked(System.Object sender, System.EventArgs e)
         {
+            
             await Navigation.PushAsync(new ManagePeriodListPage());
         }
      

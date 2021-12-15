@@ -3,7 +3,9 @@
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:Model="clr-namespace:CareerPlan.Models"
     x:Class="CareerPlan.views.NewCoursePage"
+    x:DataType="Model:Course"
     ios:Page.UseSafeArea="true"
     Title="Nuevo Curso"
     BackgroundColor="#F7F7F7">
@@ -13,11 +15,11 @@
         <!--<< TEXT ENTRIES >>-->
         <StackLayout Padding="15, 0">
             <Label Text="Nombre del Curso" FontSize="18" FontAttributes="Bold"/>
-            <Entry MaxLength="45"/>
+            <Entry Text="{Binding Name}" MaxLength="45"/>
         </StackLayout>
         <StackLayout Padding="15, 0">
             <Label Text="Profesor" FontSize="18" FontAttributes="Bold"/>
-            <Entry/>
+            <Entry Text="{Binding ProfessorName}"/>
         </StackLayout>
 
         <!--<< NUMERIC ENTRIES >>-->
@@ -28,14 +30,14 @@
 
             <StackLayout Grid.Column="0" >
                 <Label Text="Creditos" FontSize="18" FontAttributes="Bold"/>
-                <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
+                <Entry Text="{Binding Credits}" HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
             </StackLayout>
 
             <StackLayout Grid.Column="1">
                 <Label Text="Precio" FontSize="18" FontAttributes="Bold"/>
                 <StackLayout Orientation="Horizontal">
                     <Label Text="$" VerticalTextAlignment="Center" FontSize="18"/>
-                    <Entry HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
+                    <Entry Text="{Binding Price}" HorizontalOptions="FillAndExpand" Keyboard="Numeric"/>
                 </StackLayout>
             </StackLayout>
         </Grid>
@@ -51,7 +53,7 @@
             </StackLayout>
 
             <!--<< LIST DATA >>-->
-            <ListView x:Name="PeriodsList" SelectionMode="None" BackgroundColor="Transparent" IsVisible="true">
+            <ListView x:Name="PeriodsList" ItemsSource="{Binding RequiredCourses}" SelectionMode="None" BackgroundColor="Transparent" IsVisible="true">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

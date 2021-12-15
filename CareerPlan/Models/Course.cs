@@ -11,6 +11,5 @@ namespace CareerPlan.Models
         public bool IsApproved { get; set; }
         public bool IsLocked { get; set; } = true;
         public ObservableCollection<Course> RequiredCourses { get; set; } = new ObservableCollection<Course>();
-        public ObservableCollection<Course> DepententCourses { get; set; } = new ObservableCollection<Course>();
     }
 }
