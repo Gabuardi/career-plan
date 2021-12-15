@@ -70,6 +70,7 @@ namespace CareerPlan.views
 
         async void Done_Button_Clicked(System.Object sender, System.EventArgs e)
         {
+            if (AppStorage.TempCareerPlan.PeriodsList.Count == 0) newCourse.IsLocked = false;
             AppStorage.TempPeriod.CoursesList.Add(newCourse);
             await Navigation.PopAsync();
         }

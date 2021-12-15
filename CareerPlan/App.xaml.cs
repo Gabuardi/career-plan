@@ -24,6 +24,8 @@ namespace CareerPlan
             }
             MainPage = new NavigationPage(InitialPage);
 
+
+
             //AppStorage.CareerPlan = new Models.CareerPlan
             //{
             //    Name = "Bachillerato de Ingeniería en Informática",
