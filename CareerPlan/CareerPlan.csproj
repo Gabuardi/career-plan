@@ -20,7 +20,6 @@
 
   <ItemGroup>
     <None Remove="Models\" />
-    <None Remove="View Models\" />
     <None Remove="Syncfusion.Xamarin.SfProgressBar" />
     <None Remove="Custom\" />
     <None Remove="sqlite-net-pcl" />
@@ -31,7 +30,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="View Models\" />
     <Folder Include="Custom\" />
     <Folder Include="Resources\" />
     <Folder Include="Converter\" />

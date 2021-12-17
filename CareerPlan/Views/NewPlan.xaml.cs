@@ -1,5 +1,4 @@
-﻿using CareerPlan.ViewModels;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace CareerPlan.Views
 {

@@ -1,6 +1,5 @@
 ﻿using Xamarin.Forms;
 using CareerPlan.Views;
-using CareerPlan.ViewModels;
 using CareerPlan.Models;
 using System.Collections.ObjectModel;
 
