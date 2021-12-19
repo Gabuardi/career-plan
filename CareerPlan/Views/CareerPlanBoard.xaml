@@ -20,8 +20,6 @@
 
     <StackLayout VerticalOptions="FillAndExpand" Spacing="0">
 
-      
-
         <!--<< BOARD AREA >>-->
         <ScrollView VerticalOptions="FillAndExpand" Orientation="Both">
             <StackLayout BindableLayout.ItemsSource="{Binding PeriodsList}" Orientation="Horizontal" Spacing="0" VerticalOptions="FillAndExpand">
@@ -77,7 +75,6 @@
                                     </DataTemplate>
                                 </BindableLayout.ItemTemplate>
                             </StackLayout>
-
                             
                         </StackLayout>
 
